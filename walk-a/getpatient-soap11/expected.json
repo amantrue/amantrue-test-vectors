@@ -1,0 +1,120 @@
+{
+  "evaluate_results": {
+    "Patient.@id": {
+      "op": "SD",
+      "params": [],
+      "output": "bb7fb8e1-1a76-4328-92ea-3852f34846e6"
+    },
+    "Patient.BirthDate": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": true
+    },
+    "Patient.DeceasedDate": {
+      "op": "IS_NIL",
+      "params": [],
+      "output": true
+    },
+    "Patient.Gender": {
+      "op": "EQ",
+      "params": [
+        "female"
+      ],
+      "output": true
+    },
+    "Patient.Name.Given": {
+      "op": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "output": true
+    },
+    "Patient.Party.~Person": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Source": {
+      "op": "LENGTH_GTE",
+      "params": [
+        "20"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0,
+          "value": "bb7fb8e1-1a76-4328-92ea-3852f34846e6"
+        }
+      ]
+    },
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 319,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        }
+      ]
+    },
+    "Patient.DeceasedDate": {
+      "items": [
+        {
+          "el": 352,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 296,
+          "nil": false,
+          "src": 0,
+          "value": "female"
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 246,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        }
+      ]
+    },
+    "Patient.Party.~Person": {
+      "items": [
+        {
+          "el": 559,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Source": {
+      "items": [
+        {
+          "el": 469,
+          "nil": false,
+          "src": 0,
+          "value": "https://r4.smarthealthit.org/Patient/bb7fb8e1-1a76-4328-92ea-3852f34846e6"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:T6etlKg/4GyQn9Zti+XM4hOiZTgWAibNy5Bc9d7qxgA=:"
+}

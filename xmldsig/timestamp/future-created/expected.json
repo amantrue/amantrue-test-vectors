@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: timestamp: wsu:Created \"2026-10-02T12:05:00Z\" is later than the collector time plus max_skew_seconds",
+  "ok": false
+}

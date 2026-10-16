@@ -1,0 +1,8 @@
+{
+  "Patient.Name": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

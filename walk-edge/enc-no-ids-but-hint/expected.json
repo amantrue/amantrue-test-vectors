@@ -1,0 +1,16 @@
+{
+  "document_error": {
+    "kind": "hint",
+    "message": "xml: hint for id \"a\" does not match an element"
+  },
+  "evaluate_error": {
+    "kind": "hint",
+    "message": "xml: hint for id \"a\" does not match an element"
+  },
+  "hints": [
+    {
+      "id": "a",
+      "offset": 0
+    }
+  ]
+}

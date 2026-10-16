@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate \"Demo Intermediate\" is not valid at 2026-10-02T11:59:30Z",
+  "ok": false
+}

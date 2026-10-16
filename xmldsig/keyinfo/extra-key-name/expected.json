@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: KeyInfo holds an unsupported element",
+  "ok": false
+}

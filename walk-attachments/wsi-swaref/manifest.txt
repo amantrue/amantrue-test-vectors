@@ -1,0 +1,1 @@
+root="rootpart@example.org"; parts=("rootpart@example.org";type="text/xml";cte=binary;len=226;sha256=:y4YSkXJOQYtCj4eGsLrBIDhdJXvJ39HDsZd6KE2mB+c=:;start-type="";start-info="";charset="utf-8", "claim+form@example.org";type="image/tiff";cte=binary;len=64;sha256=:Jtoj0QV9W+CKfXN4DIdOzl0KqIvwDV5d5U12ZHQaj4I=:)

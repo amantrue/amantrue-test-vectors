@@ -1,0 +1,1 @@
+multipart/related; type="text/xml"; start="<rootpart@example.org>"; boundary="MIME_boundary"

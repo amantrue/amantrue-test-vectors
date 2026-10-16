@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: text outside the document element"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: text outside the document element"
+  },
+  "hints": []
+}

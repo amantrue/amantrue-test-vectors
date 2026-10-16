@@ -1,0 +1,27 @@
+{
+  "evaluate_results": {
+    "birthDate.@value": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": false,
+      "indeterminate": true
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "birthDate.@value": {
+      "items": [
+        {
+          "el": 37,
+          "nil": false,
+          "src": 0,
+          "value": "1995"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:bDJ1OIEtOtFB8gciwyUY4mJUA/v/UsA9DKK4WfNB4h0=:"
+}

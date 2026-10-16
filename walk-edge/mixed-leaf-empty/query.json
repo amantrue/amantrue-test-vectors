@@ -1,0 +1,32 @@
+{
+  "": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "#text": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "@lang": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "b": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "code": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "evaluate_error": {
+    "kind": "array",
+    "path": "Items.*",
+    "message": "soapenc: Items.*: arrayType \"xsd:string[2\" has no dimension"
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Items.*": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*",
+        "message": "soapenc: Items.*: arrayType \"xsd:string[2\" has no dimension"
+      }
+    },
+    "Items.*.@a": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*.@a",
+        "message": "soapenc: Items.*.@a: arrayType \"xsd:string[2\" has no dimension"
+      }
+    },
+    "Items.*.@x:a": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*.@x:a",
+        "message": "soapenc: Items.*.@x:a: arrayType \"xsd:string[2\" has no dimension"
+      }
+    },
+    "Plain": {
+      "items": [
+        {
+          "el": 207,
+          "nil": false,
+          "src": 0,
+          "value": "p"
+        }
+      ]
+    },
+    "Star": {
+      "items": [
+        {
+          "el": 127,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 207,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 223,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 229,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Typed": {
+      "items": [
+        {
+          "el": 223,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 229,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:GSvK1S5GtOV+5e3xGTYS6tTLn2Yu0YYOhdleFLZQOJw=:"
+}

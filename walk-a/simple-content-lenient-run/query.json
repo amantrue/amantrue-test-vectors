@@ -1,0 +1,16 @@
+{
+  "Amount.#text": {
+    "operation": {
+      "OP": "SD",
+      "params": []
+    }
+  },
+  "Amount.@currency": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "USD"
+      ]
+    }
+  }
+}

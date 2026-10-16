@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: wsse:Security holds no ds:Signature",
+  "ok": false
+}

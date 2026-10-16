@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: DigestValue of \"#ts\" is not base64",
+  "ok": false
+}

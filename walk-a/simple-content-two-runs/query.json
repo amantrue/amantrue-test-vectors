@@ -1,0 +1,8 @@
+{
+  "Amount.#text": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

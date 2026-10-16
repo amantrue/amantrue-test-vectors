@@ -1,0 +1,14 @@
+{
+  "No.Such": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

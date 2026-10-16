@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: unsupported encoding"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: unsupported encoding"
+  },
+  "hints": []
+}

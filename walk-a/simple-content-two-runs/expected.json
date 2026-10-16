@@ -1,0 +1,28 @@
+{
+  "evaluate_error": {
+    "kind": "xsd",
+    "path": "Amount.#text",
+    "message": "xsd: Amount.#text occurs more than once"
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Amount.#text": {
+      "items": [
+        {
+          "el": 27,
+          "nil": false,
+          "src": 0,
+          "value": "12"
+        },
+        {
+          "el": 27,
+          "nil": false,
+          "src": 1,
+          "value": "50"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:WsxJZ9zeIjbJIpMImIlcsrhnsi3Tg8nyX7OchDIXT+0=:"
+}

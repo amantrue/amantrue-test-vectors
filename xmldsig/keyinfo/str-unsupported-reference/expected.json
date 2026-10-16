@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: SecurityTokenReference holds an unsupported reference",
+  "ok": false
+}

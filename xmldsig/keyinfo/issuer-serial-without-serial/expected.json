@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: X509IssuerSerial must hold X509IssuerName and X509SerialNumber",
+  "ok": false
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: digest: enveloped Reference \"#ki\" lies inside the signature",
+  "ok": false
+}

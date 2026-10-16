@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: addressing header \"Action\" is not covered by the signature",
+  "ok": false
+}

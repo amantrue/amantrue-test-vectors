@@ -1,0 +1,13 @@
+{
+  "kind": "signed",
+  "algorithm": "rsa4096",
+  "chain": 1,
+  "signatures": 1,
+  "references": 3,
+  "distinct_canonicalizations": 3,
+  "cache": false,
+  "body_bytes": 29502,
+  "payload_bytes": 10169,
+  "binding_bytes": 5627,
+  "message_certs": 8
+}

@@ -1,0 +1,22 @@
+{
+  "evaluate_error": {
+    "kind": "op",
+    "path": "Patient.Note",
+    "message": "aqp: Patient.Note: LT does not apply to union values"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Note": {
+      "items": [
+        {
+          "el": 152,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:WlzepQGggaj1igrHwLgy96bAo/oKAyEZSA2bJuFF3dQ=:"
+}

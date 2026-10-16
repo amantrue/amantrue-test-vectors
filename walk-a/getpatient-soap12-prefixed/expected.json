@@ -1,0 +1,74 @@
+{
+  "evaluate_results": {
+    "Patient.BirthDate": {
+      "op": "GTE",
+      "params": [
+        "1990-01-01"
+      ],
+      "output": true
+    },
+    "Patient.Name.Given": {
+      "op": "COUNT_EQ",
+      "params": [
+        "2"
+      ],
+      "output": true
+    },
+    "Patient.Party.~Organization.LegalName": {
+      "op": "EQ",
+      "params": [
+        "Acme"
+      ],
+      "output": true
+    },
+    "Patient.Party.~Person": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 325,
+          "nil": false,
+          "src": 0,
+          "value": "1990-02-03"
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 218,
+          "nil": false,
+          "src": 0,
+          "value": "Ana"
+        },
+        {
+          "el": 240,
+          "nil": false,
+          "src": 0,
+          "value": "Maria"
+        }
+      ]
+    },
+    "Patient.Party.~Organization.LegalName": {
+      "items": [
+        {
+          "el": 421,
+          "nil": false,
+          "src": 0,
+          "value": "Acme"
+        }
+      ]
+    },
+    "Patient.Party.~Person": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:bi+oPBcj6p6y1Tp9anBptG/HW8/41u0smqiMw1etjgs=:"
+}

@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: undeclared namespace prefix \"\\u{E9}\""
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: undeclared namespace prefix \"\\u{E9}\""
+  },
+  "hints": []
+}

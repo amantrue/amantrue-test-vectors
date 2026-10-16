@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ap:Envelope xmlns:soap="htGetPatientResponse xmlns="urn:amantrue:demo:patient"><Patient id=" p1 "><Name><Given> A </Given><Given/><Given><![CDATA[B]]></Give

@@ -1,0 +1,1 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soapenv:Body><m:Resp xmlns:m="urn:legacy"><a id="é&#x7F;"/><b id="é&#x7F;"/></m:Resp></soapenv:Body></soapenv:Envelope>

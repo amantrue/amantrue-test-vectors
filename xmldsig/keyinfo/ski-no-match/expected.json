@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: KeyInfo does not identify a certificate carried in the message",
+  "ok": false
+}

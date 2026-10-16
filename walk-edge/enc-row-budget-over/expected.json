@@ -1,0 +1,24 @@
+{
+  "evaluate_error": {
+    "kind": "input",
+    "path": "R.name",
+    "message": "xml: matching work for this row exceeds the limit"
+  },
+  "hints": [
+    {
+      "id": "p",
+      "offset": 19741
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "R.name": {
+      "error": {
+        "kind": "input",
+        "path": "R.name",
+        "message": "xml: matching work for this row exceeds the limit"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:PD9arEx2bdslukP9ONRuuiKKQBKeT9UofsCHksi/3xg=:"
+}

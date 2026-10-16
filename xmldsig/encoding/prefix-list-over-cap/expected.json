@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: digest: c14n: InclusiveNamespaces PrefixList has more than 64 prefixes",
+  "ok": false
+}

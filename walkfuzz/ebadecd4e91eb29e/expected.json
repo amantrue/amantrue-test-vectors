@@ -1,0 +1,79 @@
+{
+  "evaluate_results": {
+    "Patient.@id": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.BirthDate": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": true
+    },
+    "Patient.Gender": {
+      "op": "SD",
+      "params": [],
+      "output": "female"
+    },
+    "Patient.Name.Given": {
+      "op": "COUNT_GTE",
+      "params": [
+        "1"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0,
+          "value": "bb7fb8e1"
+        }
+      ]
+    },
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 310,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        }
+      ]
+    },
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 287,
+          "nil": false,
+          "src": 0,
+          "value": "female"
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 218,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        },
+        {
+          "el": 238,
+          "nil": false,
+          "src": 0,
+          "value": "Rose"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:Z5pKFulDN1CNqqo1+Y5KkTMfNEXLrMErAm+15au/G4o=:"
+}

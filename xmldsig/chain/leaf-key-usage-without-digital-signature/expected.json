@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: leaf keyUsage lacks digitalSignature",
+  "ok": false
+}

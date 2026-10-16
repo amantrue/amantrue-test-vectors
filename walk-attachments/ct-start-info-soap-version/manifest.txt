@@ -1,0 +1,1 @@
+root="http://tempuri.org/0"; parts=("http://tempuri.org/0";type="application/xop+xml";cte=8bit;len=506;sha256=:dgqjmw1+MOtkToEdMduPQFFvx4mmV0vDXOwi2iPB6FQ=:;start-type="text/xml";start-info="application/soap+xml";charset="utf-8", "http://tempuri.org/1/638123";type="application/pdf";cte=binary;len=69;sha256=:z6MYHB7jbovOXjn4SVn0VY6nujLA5FOairPIzoxxbsY=:)

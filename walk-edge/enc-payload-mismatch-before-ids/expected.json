@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "payload",
+    "message": "xml: payload is {urn:legacy}Other, binding expects {urn:legacy}Resp"
+  },
+  "evaluate_error": {
+    "kind": "payload",
+    "message": "xml: payload is {urn:legacy}Other, binding expects {urn:legacy}Resp"
+  },
+  "hints": []
+}

@@ -1,0 +1,28 @@
+{
+  "document_error": {
+    "kind": "hint",
+    "message": "xml: duplicate hint for id \"id0\""
+  },
+  "evaluate_error": {
+    "kind": "hint",
+    "message": "xml: duplicate hint for id \"id0\""
+  },
+  "hints": [
+    {
+      "id": "id0",
+      "offset": 411
+    },
+    {
+      "id": "id1",
+      "offset": 460
+    },
+    {
+      "id": "id2",
+      "offset": 514
+    },
+    {
+      "id": "id0",
+      "offset": 411
+    }
+  ]
+}

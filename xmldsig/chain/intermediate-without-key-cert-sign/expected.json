@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: \"Demo Intermediate\" keyUsage lacks keyCertSign",
+  "ok": false
+}

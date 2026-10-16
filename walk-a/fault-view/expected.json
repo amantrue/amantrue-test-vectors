@@ -1,0 +1,54 @@
+{
+  "evaluate_results": {
+    "Fault": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Fault.PatientNotFound": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Fault.PatientNotFound.PatientId": {
+      "op": "EQ",
+      "params": [
+        "nope"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 76,
+  "rows": {
+    "Fault": {
+      "items": [
+        {
+          "el": 76,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Fault.PatientNotFound": {
+      "items": [
+        {
+          "el": 228,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Fault.PatientNotFound.PatientId": {
+      "items": [
+        {
+          "el": 279,
+          "nil": false,
+          "src": 0,
+          "value": "nope"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:jAGUDz8I0grzt4r/mqHh1VRKLaEY63xgcO/ydH0c6lc=:"
+}

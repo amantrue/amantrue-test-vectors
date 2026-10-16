@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: RSA public exponent 3 is not 65537",
+  "ok": false
+}

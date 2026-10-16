@@ -1,0 +1,38 @@
+{
+  "Items.*": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Items.*.@a": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Items.*.@x:a": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Plain": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Star": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Typed": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

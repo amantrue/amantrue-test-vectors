@@ -1,0 +1,150 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "F.v": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "H.x": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Items": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Names": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.@a": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.any": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.date": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.inner.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Typed": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "h",
+      "offset": 363
+    }
+  ],
+  "payload_start": 306,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 306,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": [
+        {
+          "el": 249,
+          "nil": false,
+          "src": 0,
+          "value": "1"
+        }
+      ]
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 363,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": []
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 380,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "items": [
+        {
+          "el": 380,
+          "nil": false,
+          "src": 0,
+          "value": "B"
+        }
+      ]
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:Hj6pqO9y7rpCQacHCsJMVb+jSS7e6EjloGv5/V2qHiA=:"
+}

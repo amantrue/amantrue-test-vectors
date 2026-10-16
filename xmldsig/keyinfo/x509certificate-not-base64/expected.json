@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: X509Certificate is not base64",
+  "ok": false
+}

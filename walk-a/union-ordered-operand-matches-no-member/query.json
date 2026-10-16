@@ -1,0 +1,10 @@
+{
+  "When": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "soon"
+      ]
+    }
+  }
+}

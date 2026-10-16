@@ -1,0 +1,1 @@
+root="root@demo"; parts=("root@demo";type="application/xop+xml";cte=binary;len=297;sha256=:nFsOAQOugiCR4ZROj3gEe7EwPNVij8/zhc2n/eZkJwc=:;start-type="text/xml";start-info="text/xml";charset="utf-8", "invoice@demo";type="application/xml";cte=binary;len=51082;sha256=:AuL3bIylLkZrZtV5BDAZZZk2opnLLMwlPGI6Po0RaRc=:)

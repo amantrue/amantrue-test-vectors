@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: Header holds no wsse:Security for the ultimate receiver",
+  "ok": false
+}

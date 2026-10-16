@@ -1,0 +1,1 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p="urn:p"><s:Header><p:Session><p:Id>s</p:Id></p:Session></s:Header><s:Body><s:Fault><faultcode>c</faultcode></s:Fault></s:Body></s:Envelope>

@@ -1,0 +1,10 @@
+{
+  "getPatientReturn.names": {
+    "operation": {
+      "OP": "COUNT_GTE",
+      "params": [
+        0
+      ]
+    }
+  }
+}

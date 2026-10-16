@@ -1,0 +1,144 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "F.v": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "H.x": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Items": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Names": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.@a": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.any": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.date": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.inner.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Typed": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "hb",
+      "offset": 342
+    }
+  ],
+  "payload_start": 295,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 295,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": [
+        {
+          "el": 342,
+          "nil": false,
+          "src": 0,
+          "value": "HB"
+        }
+      ]
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 324,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": [
+        {
+          "el": 324,
+          "nil": false,
+          "src": 0,
+          "value": ""
+        }
+      ]
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "items": []
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "items": []
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:a6OWOMOpRp+93G8PiX+ej5yoEPfwTTTxkYcib5S+n7M=:"
+}

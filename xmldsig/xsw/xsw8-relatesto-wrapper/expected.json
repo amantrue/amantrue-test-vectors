@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: relates_to: wsa:RelatesTo is not covered by the signature",
+  "ok": false
+}

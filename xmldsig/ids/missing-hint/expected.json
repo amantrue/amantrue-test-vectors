@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: resolve_ids: no offset hint for id \"ts\"",
+  "ok": false
+}

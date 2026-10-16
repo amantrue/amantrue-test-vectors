@@ -1,0 +1,1 @@
+root="r@cxf"; parts=("r@cxf";type="application/xop+xml";cte=binary;len=485;sha256=:wSMzq67ZgMftgk7L5QI21QRWz73UNuqRFnaBO8Sg1Ec=:;start-type="text/xml";start-info="text/xml";charset="utf-8")

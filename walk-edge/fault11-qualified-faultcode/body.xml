@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><soap:faultcode>x</soap:faultcode></soap:Fault></soap:Body></soap:Envelope>

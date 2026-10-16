@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate \"response-signer\" is not valid at 2026-10-02T11:59:30Z",
+  "ok": false
+}

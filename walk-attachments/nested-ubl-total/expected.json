@@ -1,0 +1,57 @@
+{
+  "results": {
+    "Invoice.Content.LegalMonetaryTotal.PayableAmount": {
+      "op": "GTE",
+      "params": [
+        "1000"
+      ],
+      "output": true
+    }
+  },
+  "attachments": [
+    {
+      "path": "Invoice.Content",
+      "media_type": "application/xml",
+      "length": 51082,
+      "nested_binding_hash": "sha-256=:jwhk+cfwtGxRm+h1wBOyf7ZEoKwqOdVRvkwpY6PWp28=:"
+    }
+  ],
+  "required": [
+    "invoice@demo"
+  ],
+  "variants": [
+    {
+      "name": "root-tampered",
+      "tamper": "root",
+      "error": {
+        "kind": "mime",
+        "message": "mime: root part does not match the signed manifest"
+      }
+    },
+    {
+      "name": "extra-attachment",
+      "tamper": "extra",
+      "error": {
+        "kind": "mime",
+        "message": "mime: supplied attachment is not in the signed manifest extra@amantrue"
+      }
+    },
+    {
+      "name": "attachment-tampered",
+      "tamper": "flip:invoice@demo",
+      "error": {
+        "kind": "mime",
+        "message": "mime: supplied attachment does not match the signed manifest invoice@demo"
+      }
+    },
+    {
+      "name": "attachment-withheld",
+      "tamper": "drop:invoice@demo",
+      "error": {
+        "kind": "mime",
+        "path": "Invoice.Content",
+        "message": "mime: attachment bytes withheld invoice@demo"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: body is not valid UTF-8"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: body is not valid UTF-8"
+  },
+  "hints": []
+}

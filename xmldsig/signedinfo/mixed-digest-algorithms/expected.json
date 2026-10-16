@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: references use different digest algorithms",
+  "ok": false
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: \"Demo Intermediate\" is not a CA",
+  "ok": false
+}

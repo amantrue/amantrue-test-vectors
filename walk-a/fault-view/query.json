@@ -1,0 +1,22 @@
+{
+  "Fault.PatientNotFound": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Fault.PatientNotFound.PatientId": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "nope"
+      ]
+    }
+  },
+  "Fault": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

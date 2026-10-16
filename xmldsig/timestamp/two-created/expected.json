@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: timestamp: wsu:Timestamp must hold exactly one wsu:Created",
+  "ok": false
+}

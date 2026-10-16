@@ -1,0 +1,26 @@
+{
+  "Patient.Span": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "P2M"
+      ]
+    }
+  },
+  "Patient.Gap": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "P30D"
+      ]
+    }
+  },
+  "Patient.On": {
+    "operation": {
+      "OP": "GTE",
+      "params": [
+        "P1Y"
+      ]
+    }
+  }
+}

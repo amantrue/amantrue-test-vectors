@@ -1,0 +1,51 @@
+{
+  "Codes": {
+    "operation": {
+      "OP": "LENGTH_EQ",
+      "params": [
+        3
+      ],
+      "each": "ALL"
+    }
+  },
+  "When": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "2026"
+      ]
+    }
+  },
+  "Score": {
+    "operation": {
+      "OP": "GTE",
+      "params": [
+        "10.5"
+      ]
+    }
+  },
+  "Photo": {
+    "operation": {
+      "OP": "SHA256_EQ",
+      "params": [
+        "sha-256=:LPJNul+wow4m6DsqxbninhsWHlwfp0JecwQzYpOLmCQ=:"
+      ]
+    }
+  },
+  "Checksum": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "0fa0"
+      ]
+    }
+  },
+  "Tags": {
+    "operation": {
+      "OP": "COUNT_EQ",
+      "params": [
+        3
+      ]
+    }
+  }
+}

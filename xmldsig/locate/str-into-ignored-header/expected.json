@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: SecurityTokenReference does not point at an X509v3 BinarySecurityToken in this wsse:Security",
+  "ok": false
+}

@@ -1,0 +1,64 @@
+{
+  "evaluate_error": {
+    "kind": "array",
+    "path": "Items.*",
+    "message": "soapenc: Items.*: sparse arrays are not supported"
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Items.*": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*",
+        "message": "soapenc: Items.*: sparse arrays are not supported"
+      }
+    },
+    "Items.*.@a": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*.@a",
+        "message": "soapenc: Items.*.@a: sparse arrays are not supported"
+      }
+    },
+    "Items.*.@x:a": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*.@x:a",
+        "message": "soapenc: Items.*.@x:a: sparse arrays are not supported"
+      }
+    },
+    "Plain": {
+      "items": [
+        {
+          "el": 223,
+          "nil": false,
+          "src": 0,
+          "value": "p"
+        }
+      ]
+    },
+    "Star": {
+      "error": {
+        "kind": "array",
+        "path": "Star",
+        "message": "soapenc: Star: sparse arrays are not supported"
+      }
+    },
+    "Typed": {
+      "items": [
+        {
+          "el": 239,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 245,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:/OnQKmJxsmjDHH3ebxajMoH3PzrcS1QnRW9iHJvIs/4=:"
+}

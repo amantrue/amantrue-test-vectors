@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: Reference \"#rel\" must hold Transforms, DigestMethod and DigestValue",
+  "ok": false
+}

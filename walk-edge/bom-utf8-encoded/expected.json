@@ -1,0 +1,58 @@
+{
+  "evaluate_results": {
+    "Names": {
+      "op": "COUNT_EQ",
+      "params": [
+        "2"
+      ],
+      "output": true
+    },
+    "Return.Name": {
+      "op": "SD",
+      "params": [],
+      "output": "Eboni"
+    }
+  },
+  "hints": [
+    {
+      "id": "id0",
+      "offset": 439
+    },
+    {
+      "id": "id1",
+      "offset": 488
+    },
+    {
+      "id": "id2",
+      "offset": 542
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "Names": {
+      "items": [
+        {
+          "el": 488,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 371,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Return.Name": {
+      "items": [
+        {
+          "el": 542,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:XooL9lQUOcv5gCyJqEKXEk6+BOkrv5KSpV5JhUd6RzM=:"
+}

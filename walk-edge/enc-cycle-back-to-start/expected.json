@@ -1,0 +1,94 @@
+{
+  "evaluate_error": {
+    "kind": "hint",
+    "path": "R",
+    "message": "xml: href cycle at R"
+  },
+  "hints": [
+    {
+      "id": "a",
+      "offset": 311
+    },
+    {
+      "id": "s",
+      "offset": 276
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "error": {
+        "kind": "hint",
+        "path": "R",
+        "message": "xml: href cycle at R"
+      }
+    },
+    "R.#text": {
+      "error": {
+        "kind": "hint",
+        "path": "R.#text",
+        "message": "xml: href cycle at R.#text"
+      }
+    },
+    "R.@a": {
+      "error": {
+        "kind": "hint",
+        "path": "R.@a",
+        "message": "xml: href cycle at R.@a"
+      }
+    },
+    "R.any": {
+      "error": {
+        "kind": "hint",
+        "path": "R.any",
+        "message": "xml: href cycle at R.any"
+      }
+    },
+    "R.date": {
+      "error": {
+        "kind": "hint",
+        "path": "R.date",
+        "message": "xml: href cycle at R.date"
+      }
+    },
+    "R.inner.name": {
+      "error": {
+        "kind": "hint",
+        "path": "R.inner.name",
+        "message": "xml: href cycle at R.inner.name"
+      }
+    },
+    "R.name": {
+      "error": {
+        "kind": "hint",
+        "path": "R.name",
+        "message": "xml: href cycle at R.name"
+      }
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:jn61Ie2+umQdSF7BaVb4jphWhejCbRBoDyumUt4Jhw8=:"
+}

@@ -1,0 +1,32 @@
+{
+  "Patient.BirthDate": {
+    "operation": {
+      "OP": "GTE",
+      "params": [
+        "1990-01-01"
+      ]
+    }
+  },
+  "Patient.Name.Given": {
+    "operation": {
+      "OP": "COUNT_EQ",
+      "params": [
+        2
+      ]
+    }
+  },
+  "Patient.Party.~Organization.LegalName": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "Acme"
+      ]
+    }
+  },
+  "Patient.Party.~Person": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

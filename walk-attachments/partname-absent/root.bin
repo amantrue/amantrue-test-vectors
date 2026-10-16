@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><GetReportResponse xmlns="urn:reports"><Status>ready</Status></GetReportResponse></soap:Body></soap:Envelope>

@@ -1,0 +1,1 @@
+multipart/related; type="application/xop+xml"; boundary="uuid:cxf"; start="<root.message@cxf.apache.org>"; start-info="text/xml"

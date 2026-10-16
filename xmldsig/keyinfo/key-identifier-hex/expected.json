@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: KeyIdentifier EncodingType \"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#HexBinary\" is not Base64Binary",
+  "ok": false
+}

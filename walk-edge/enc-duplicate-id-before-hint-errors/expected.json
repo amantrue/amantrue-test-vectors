@@ -1,0 +1,16 @@
+{
+  "document_error": {
+    "kind": "hint",
+    "message": "xml: duplicate id \"x\""
+  },
+  "evaluate_error": {
+    "kind": "hint",
+    "message": "xml: duplicate id \"x\""
+  },
+  "hints": [
+    {
+      "id": "zz",
+      "offset": 1
+    }
+  ]
+}

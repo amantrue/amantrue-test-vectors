@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: SignatureMethod \"http://www.w3.org/2000/09/xmldsig#rsa-sha1\" is not allowed",
+  "ok": false
+}

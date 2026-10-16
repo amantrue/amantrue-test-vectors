@@ -1,0 +1,39 @@
+{
+  "evaluate_results": {
+    "Patient.DeceasedDate": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Patient.Gender": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Patient.Name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.DeceasedDate": {
+      "items": []
+    },
+    "Patient.Gender": {
+      "items": []
+    },
+    "Patient.Name": {
+      "items": [
+        {
+          "el": 206,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:62en9+hKjj4TCctAE0iJpghbsA9FNltlPVpGs7rNptU=:"
+}

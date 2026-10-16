@@ -1,0 +1,45 @@
+{
+  "evaluate_results": {
+    "Patient.Seen": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": false,
+      "indeterminate": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Seen": {
+      "items": [
+        {
+          "el": 152,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        },
+        {
+          "el": 175,
+          "nil": false,
+          "src": 0,
+          "value": "2010"
+        },
+        {
+          "el": 192,
+          "nil": false,
+          "src": 0,
+          "value": "2001-02"
+        },
+        {
+          "el": 212,
+          "nil": false,
+          "src": 0,
+          "value": "1999-12-31"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:t86Cv+Fhzro9YSY3tZv0yfoRkQbk1GFbM1YdM3N8jHs=:"
+}

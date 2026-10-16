@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: row \"Hdr.RelatesTo\" addresses the SOAP Header",
+  "ok": false
+}

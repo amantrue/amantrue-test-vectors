@@ -1,0 +1,42 @@
+{
+  "evaluate_error": {
+    "kind": "xsi_type",
+    "path": "Patient.Party.~Organization.LegalName",
+    "message": "xsd: Patient.Party.~Organization.LegalName: xsi:type \"zz:Person\" uses an undeclared prefix"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Party": {
+      "items": [
+        {
+          "el": 242,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Party.~Organization.LegalName": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Organization.LegalName",
+        "message": "xsd: Patient.Party.~Organization.LegalName: xsi:type \"zz:Person\" uses an undeclared prefix"
+      }
+    },
+    "Patient.Party.~Person": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Person",
+        "message": "xsd: Patient.Party.~Person: xsi:type \"zz:Person\" uses an undeclared prefix"
+      }
+    },
+    "Patient.Party.~Person.Name": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Person.Name",
+        "message": "xsd: Patient.Party.~Person.Name: xsi:type \"zz:Person\" uses an undeclared prefix"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:2VCAFEUMwelNvqkjK/B/dtWTgU0Ww3yubU5droIpXv4=:"
+}

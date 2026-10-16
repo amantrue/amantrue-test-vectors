@@ -1,0 +1,32 @@
+{
+  "evaluate_error": {
+    "kind": "hint",
+    "path": "getPatientReturn.names",
+    "message": "xml: href cycle at getPatientReturn.names"
+  },
+  "hints": [
+    {
+      "id": "id0",
+      "offset": 372
+    },
+    {
+      "id": "id1",
+      "offset": 851
+    },
+    {
+      "id": "id2",
+      "offset": 883
+    }
+  ],
+  "payload_start": 189,
+  "rows": {
+    "getPatientReturn.names": {
+      "error": {
+        "kind": "hint",
+        "path": "getPatientReturn.names",
+        "message": "xml: href cycle at getPatientReturn.names"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:BrZQh/vmLS8SDfox3vFS1sOCvqH8Q5MtmSCkc1DPNyU=:"
+}

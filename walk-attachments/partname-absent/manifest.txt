@@ -1,0 +1,1 @@
+root="root@reports.example.org"; parts=("root@reports.example.org";type="text/xml";cte=binary;len=190;sha256=:Sv1THgMzmE8/WL+qRaKu/zGxifVVy2CCmIo7kOBJFC0=:;start-type="";start-info="";charset="utf-8", "Other=1@reports.example.org";type="application/pdf";cte=binary;len=69;sha256=:z6MYHB7jbovOXjn4SVn0VY6nujLA5FOairPIzoxxbsY=:)

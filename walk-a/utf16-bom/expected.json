@@ -1,0 +1,41 @@
+{
+  "evaluate_results": {
+    "Patient.Gender": {
+      "op": "EQ",
+      "params": [
+        "female"
+      ],
+      "output": true
+    },
+    "Patient.Party.~Person.Name": {
+      "op": "SD",
+      "params": [],
+      "output": "Eboni Brekke"
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 296,
+          "nil": false,
+          "src": 0,
+          "value": "female"
+        }
+      ]
+    },
+    "Patient.Party.~Person.Name": {
+      "items": [
+        {
+          "el": 584,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni Brekke"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:T6etlKg/4GyQn9Zti+XM4hOiZTgWAibNy5Bc9d7qxgA=:"
+}

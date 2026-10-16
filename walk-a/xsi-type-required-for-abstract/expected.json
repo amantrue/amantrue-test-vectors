@@ -1,0 +1,19 @@
+{
+  "evaluate_error": {
+    "kind": "xsi_type",
+    "path": "Patient.Party.~Person",
+    "message": "xsd: Patient.Party.~Person: xsi:type (none) not allowed"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Party.~Person": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Person",
+        "message": "xsd: Patient.Party.~Person: xsi:type (none) not allowed"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:LOLJnoOHxgNhMbVn6O2cd0Hbj6Na8vsFThtT1hLZXUg=:"
+}

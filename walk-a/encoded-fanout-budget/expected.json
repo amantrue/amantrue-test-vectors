@@ -1,0 +1,24 @@
+{
+  "evaluate_error": {
+    "kind": "input",
+    "path": "getPatientReturn.birthDate",
+    "message": "xml: matching work for this row exceeds the limit"
+  },
+  "hints": [
+    {
+      "id": "p",
+      "offset": 11941
+    }
+  ],
+  "payload_start": 189,
+  "rows": {
+    "getPatientReturn.birthDate": {
+      "error": {
+        "kind": "input",
+        "path": "getPatientReturn.birthDate",
+        "message": "xml: matching work for this row exceeds the limit"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:aydi4I/OqCgMDRdCgm/jjatUpBYzz4SicIvETC2t9XQ=:"
+}

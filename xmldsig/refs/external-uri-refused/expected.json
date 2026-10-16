@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: Reference URI \"http://evil.example/doc\" is not a same-document #id",
+  "ok": false
+}

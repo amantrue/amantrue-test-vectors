@@ -1,0 +1,1 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soapenv:Body><m:Resp xmlns:m="urn:legacy"><return href="#t" a="onref"/></m:Resp><multiRef id="t"/></soapenv:Body></soapenv:Envelope>

@@ -1,0 +1,52 @@
+{
+  "evaluate_error": {
+    "kind": "hint",
+    "path": "getPatientReturn.birthDate",
+    "message": "xml: href chain longer than 8 at getPatientReturn.birthDate"
+  },
+  "hints": [
+    {
+      "id": "c1",
+      "offset": 371
+    },
+    {
+      "id": "c2",
+      "offset": 401
+    },
+    {
+      "id": "c3",
+      "offset": 431
+    },
+    {
+      "id": "c4",
+      "offset": 461
+    },
+    {
+      "id": "c5",
+      "offset": 491
+    },
+    {
+      "id": "c6",
+      "offset": 521
+    },
+    {
+      "id": "c7",
+      "offset": 551
+    },
+    {
+      "id": "c8",
+      "offset": 581
+    }
+  ],
+  "payload_start": 189,
+  "rows": {
+    "getPatientReturn.birthDate": {
+      "error": {
+        "kind": "hint",
+        "path": "getPatientReturn.birthDate",
+        "message": "xml: href chain longer than 8 at getPatientReturn.birthDate"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:4kyDxyGY88ccghjJXRPXuo/VAvtMXNIUNzTTlybU2F0=:"
+}

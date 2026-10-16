@@ -1,0 +1,26 @@
+{
+  "Fault.Code": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Header": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Header.Session.Id": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "V": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "@lang": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "b": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "code": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 0,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "#text": {
+      "items": []
+    },
+    "@lang": {
+      "items": []
+    },
+    "b": {
+      "items": [
+        {
+          "el": 24,
+          "nil": false,
+          "src": 0,
+          "value": "x"
+        },
+        {
+          "el": 33,
+          "nil": false,
+          "src": 0,
+          "value": "y"
+        }
+      ]
+    },
+    "code": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:0GfkAwJOe02FOptHhM+8uEO4MFnJw0lqNoC3MnGUUCQ=:"
+}

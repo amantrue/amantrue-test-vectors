@@ -1,0 +1,263 @@
+[
+ {
+  "name": "unused-prefix-dropped",
+  "doc": "<p:R xmlns:p=\"urn:p\" xmlns:unused=\"urn:u\" b=\"2\" a=\"1\"><p:C xmlns:p=\"urn:p\">t</p:C></p:R>",
+  "start": 0,
+  "want": "<p:R xmlns:p=\"urn:p\" a=\"1\" b=\"2\"><p:C>t</p:C></p:R>"
+ },
+ {
+  "name": "default-undeclared",
+  "doc": "<R xmlns=\"urn:d\"><C xmlns=\"\"><D/></C></R>",
+  "start": 0,
+  "want": "<R xmlns=\"urn:d\"><C xmlns=\"\"><D></D></C></R>"
+ },
+ {
+  "name": "attribute-order",
+  "doc": "<R xmlns:a=\"urn:a\" xmlns:b=\"urn:b\" b:x=\"1\" a:y=\"2\" z=\"3\" xml:lang=\"en\"><a:C/></R>",
+  "start": 0,
+  "want": "<R xmlns:a=\"urn:a\" xmlns:b=\"urn:b\" z=\"3\" xml:lang=\"en\" a:y=\"2\" b:x=\"1\"><a:C></a:C></R>"
+ },
+ {
+  "name": "escaping",
+  "doc": "<R a=\"x&#9;y&#10;z&#13;\" q=\"&quot;&lt;&amp;\">&#13;<![CDATA[<&>]]>&gt;</R>",
+  "start": 0,
+  "want": "<R a=\"x&#x9;y&#xA;z&#xD;\" q=\"&quot;&lt;&amp;\">&#xD;&lt;&amp;&gt;&gt;</R>"
+ },
+ {
+  "name": "attr-whitespace-normalized",
+  "doc": "<R a=\"x\ty\nz\">l1\r\nl2</R>",
+  "start": 0,
+  "want": "<R a=\"x y z\">l1\nl2</R>"
+ },
+ {
+  "name": "inherited-prefixes",
+  "doc": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:p=\"urn:p\" xmlns:x=\"urn:x\" xmlns:u=\"urn:u\"><soap:Body><p:R x:a=\"1\"><p:C/></p:R></soap:Body></soap:Envelope>",
+  "start": 129,
+  "want": "<p:R xmlns:p=\"urn:p\" xmlns:x=\"urn:x\" x:a=\"1\"><p:C></p:C></p:R>"
+ },
+ {
+  "name": "inherited-default",
+  "doc": "<e:Env xmlns:e=\"urn:e\" xmlns=\"urn:d\"><e:Body><R><C/></R></e:Body></e:Env>",
+  "start": 45,
+  "want": "<R xmlns=\"urn:d\"><C></C></R>"
+ },
+ {
+  "name": "no-namespace-under-default-parent",
+  "doc": "<Env xmlns=\"urn:e\"><Body xmlns=\"\"><R/></Body></Env>",
+  "start": 34,
+  "want": "<R></R>"
+ },
+ {
+  "name": "xml-lang-not-inherited",
+  "doc": "<Env xml:lang=\"en\"><R>t</R></Env>",
+  "start": 19,
+  "want": "<R>t</R>"
+ },
+ {
+  "name": "comments-dropped",
+  "doc": "<Env><R><!-- c -->a<!-- d -->b</R></Env>",
+  "start": 5,
+  "want": "<R>ab</R>"
+ },
+ {
+  "name": "redundant-redeclaration",
+  "doc": "<p:R xmlns:p=\"urn:p\"><p:C xmlns:p=\"urn:other\"><p:D xmlns:p=\"urn:other\"/></p:C></p:R>",
+  "start": 0,
+  "want": "<p:R xmlns:p=\"urn:p\"><p:C xmlns:p=\"urn:other\"><p:D></p:D></p:C></p:R>"
+ },
+ {
+  "name": "getpatient",
+  "doc": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"><soap:Body><GetPatientResponse xmlns=\"urn:amantrue:demo:patient\"><Patient id=\"p1\"><Name><Given>Eboni</Given></Name></Patient></GetPatientResponse></soap:Body></soap:Envelope>",
+  "start": 81,
+  "want": "<GetPatientResponse xmlns=\"urn:amantrue:demo:patient\"><Patient id=\"p1\"><Name><Given>Eboni</Given></Name></Patient></GetPatientResponse>"
+ },
+ {
+  "name": "xml-attributes-never-declared",
+  "doc": "<R xml:space=\"preserve\"><C xml:lang=\"en\"/></R>",
+  "start": 0,
+  "want": "<R xml:space=\"preserve\"><C xml:lang=\"en\"></C></R>"
+ },
+ {
+  "name": "same-local-name-sorted-by-uri",
+  "doc": "<R xmlns:b=\"urn:b\" xmlns:a=\"urn:a\" b:x=\"1\" a:x=\"2\" x=\"0\"/>",
+  "start": 0,
+  "want": "<R xmlns:a=\"urn:a\" xmlns:b=\"urn:b\" x=\"0\" a:x=\"2\" b:x=\"1\"></R>"
+ },
+ {
+  "name": "attr-crlf-is-one-space",
+  "doc": "<R a=\"a\r\nb\rc\"/>",
+  "start": 0,
+  "want": "<R a=\"a b c\"></R>"
+ },
+ {
+  "name": "default-and-prefix-same-uri",
+  "doc": "<R xmlns=\"urn:x\" xmlns:p=\"urn:x\"><p:C/><C/></R>",
+  "start": 0,
+  "want": "<R xmlns=\"urn:x\"><p:C xmlns:p=\"urn:x\"></p:C><C></C></R>"
+ },
+ {
+  "name": "siblings-each-render",
+  "doc": "<R><p:A xmlns:p=\"urn:p\"/><p:B xmlns:p=\"urn:p\"/></R>",
+  "start": 0,
+  "want": "<R><p:A xmlns:p=\"urn:p\"></p:A><p:B xmlns:p=\"urn:p\"></p:B></R>"
+ },
+ {
+  "name": "attribute-prefix-utilized",
+  "doc": "<R xmlns:p=\"urn:p\"><C p:a=\"1\"/></R>",
+  "start": 0,
+  "want": "<R><C xmlns:p=\"urn:p\" p:a=\"1\"></C></R>"
+ },
+ {
+  "name": "default-redeclared-same",
+  "doc": "<R xmlns=\"urn:d\"><C xmlns=\"urn:d\"/></R>",
+  "start": 0,
+  "want": "<R xmlns=\"urn:d\"><C></C></R>"
+ },
+ {
+  "name": "non-ascii-and-quotes",
+  "doc": "<R a=\"é&gt;'\" b='\"'>ü&apos;&quot;</R>",
+  "start": 0,
+  "want": "<R a=\"é>'\" b=\"&quot;\">ü'\"</R>"
+ },
+ {
+  "name": "whitespace-text-kept",
+  "doc": "<R>\n <C/>\t\n</R>",
+  "start": 0,
+  "want": "<R>\n <C></C>\t\n</R>"
+ },
+ {
+  "name": "prolog-ignored",
+  "doc": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!-- c --><R/>",
+  "start": 49,
+  "want": "<R></R>"
+ },
+ {
+  "name": "prefix-shadowed-and-restored",
+  "doc": "<p:R xmlns:p=\"urn:1\"><p:C xmlns:p=\"urn:2\"><p:D xmlns:p=\"urn:1\"/></p:C></p:R>",
+  "start": 0,
+  "want": "<p:R xmlns:p=\"urn:1\"><p:C xmlns:p=\"urn:2\"><p:D xmlns:p=\"urn:1\"></p:D></p:C></p:R>"
+ },
+ {
+  "name": "empty-attribute",
+  "doc": "<R a=\"\"></R>",
+  "start": 0,
+  "want": "<R a=\"\"></R>"
+ },
+ {
+  "name": "cdata-line-ends",
+  "doc": "<R><![CDATA[a\r\nb\rc]]></R>",
+  "start": 0,
+  "want": "<R>a\nb\nc</R>"
+ },
+ {
+  "name": "text-char-refs",
+  "doc": "<R>a&#13;&#10;b&#x9;&#62;</R>",
+  "start": 0,
+  "want": "<R>a&#xD;\nb\t&gt;</R>"
+ },
+ {
+  "name": "soap11-fault",
+  "doc": "<s:Envelope xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><s:Body><s:Fault><faultcode>s:Server</faultcode><faultstring>x</faultstring></s:Fault></s:Body></s:Envelope>",
+  "start": 72,
+  "want": "<s:Fault xmlns:s=\"http://schemas.xmlsoap.org/soap/envelope/\"><faultcode>s:Server</faultcode><faultstring>x</faultstring></s:Fault>"
+ },
+ {
+  "name": "apex-default-under-prefixed-envelope",
+  "doc": "<e:Env xmlns:e=\"urn:e\"><e:Body xmlns=\"urn:d\"><e:R><C/></e:R></e:Body></e:Env>",
+  "start": 45,
+  "want": "<e:R xmlns:e=\"urn:e\"><C xmlns=\"urn:d\"></C></e:R>"
+ },
+ {
+  "name": "apex-attribute-prefix-from-ancestor",
+  "doc": "<Env xmlns:x=\"urn:x\"><R x:a=\"1\" xmlns:y=\"urn:y\"><y:C/></R></Env>",
+  "start": 21,
+  "want": "<R xmlns:x=\"urn:x\" x:a=\"1\"><y:C xmlns:y=\"urn:y\"></y:C></R>"
+ },
+ {
+  "name": "namespace-uri-escaped",
+  "doc": "<R xmlns=\"urn:a&amp;b&quot;&lt;c\"/>",
+  "start": 0,
+  "want": "<R xmlns=\"urn:a&amp;b&quot;&lt;c\"></R>"
+ },
+ {
+  "name": "end-tag-whitespace",
+  "doc": "<R><C ></C ></R >",
+  "start": 0,
+  "want": "<R><C></C></R>"
+ },
+ {
+  "name": "single-quoted-attributes",
+  "doc": "<R a='1' b='\"'/>",
+  "start": 0,
+  "want": "<R a=\"1\" b=\"&quot;\"></R>"
+ },
+ {
+  "name": "namespace-uri-literal-tab-refused",
+  "doc": "<R xmlns:p=\"urn:a\tb\"><p:C/></R>",
+  "start": 0,
+  "error": {
+   "kind": "input",
+   "message": "xml: namespace URI contains a tab or line break"
+  }
+ },
+ {
+  "name": "namespace-uri-char-ref-line-break-refused",
+  "doc": "<R xmlns=\"urn:&#10;x\"/>",
+  "start": 0,
+  "error": {
+   "kind": "input",
+   "message": "xml: namespace URI contains a tab or line break"
+  }
+ },
+ {
+  "name": "namespace-uri-inherited-crlf-refused",
+  "doc": "<E xmlns:p=\"urn:a\r\nb\"><p:R/></E>",
+  "start": 22,
+  "error": {
+   "kind": "input",
+   "message": "xml: namespace URI contains a tab or line break"
+  }
+ },
+ {
+  "name": "namespace-uri-unused-tab-ignored",
+  "doc": "<R xmlns:u=\"urn:a\tb\" a=\"1\"/>",
+  "start": 0,
+  "want": "<R a=\"1\"></R>"
+ },
+ {
+  "name": "undeclared-prefix-non-ascii-quoted",
+  "doc": "<é:R/>",
+  "start": 0,
+  "error": {
+   "kind": "input",
+   "message": "c14n: undeclared namespace prefix \"\\u{E9}\""
+  }
+ },
+ {
+  "name": "undeclared-attribute-prefix-mixed-quoted",
+  "doc": "<R aé:x=\"1\"/>",
+  "start": 0,
+  "error": {
+   "kind": "input",
+   "message": "c14n: undeclared namespace prefix \"a\\u{E9}\""
+  }
+ },
+ {
+  "name": "processing-instruction-non-ascii-target-quoted",
+  "doc": "<R><?ü x?></R>",
+  "start": 0,
+  "error": {
+   "kind": "input",
+   "message": "c14n: processing instruction \"\\u{FC}\" inside the canonicalized element"
+  }
+ },
+ {
+  "name": "processing-instruction-cjk-target-quoted",
+  "doc": "<R><?中x y?></R>",
+  "start": 0,
+  "error": {
+   "kind": "input",
+   "message": "c14n: processing instruction \"\\u{4E2D}x\" inside the canonicalized element"
+  }
+ }
+]

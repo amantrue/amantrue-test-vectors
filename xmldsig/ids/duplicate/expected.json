@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: resolve_ids: duplicate id \"body\"",
+  "ok": false
+}

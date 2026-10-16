@@ -1,0 +1,125 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.@id": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.BirthDate": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.DeceasedDate": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Patient.Gender": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Name.Given": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 81,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0,
+          "value": "p1"
+        }
+      ]
+    },
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 284,
+          "nil": false,
+          "src": 0,
+          "value": " 1995-07-10 "
+        }
+      ]
+    },
+    "Patient.DeceasedDate": {
+      "items": []
+    },
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 261,
+          "nil": false,
+          "src": 0,
+          "value": "female"
+        }
+      ]
+    },
+    "Patient.Name": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 212,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        },
+        {
+          "el": 232,
+          "nil": false,
+          "src": 0,
+          "value": " Ebony "
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:ZeurJDImT3XcBVhrk/+IdD9Z6G+2Nj9lBsqiVeEcuss=:"
+}

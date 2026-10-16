@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: Reference URI \"\" is not a same-document #id",
+  "ok": false
+}

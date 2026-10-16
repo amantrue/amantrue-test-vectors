@@ -1,0 +1,7 @@
+{
+  "required": [],
+  "error": {
+    "kind": "mime",
+    "message": "mime: start \u003chttp://tempuri.org/1/638123\u003e is not the manifest root"
+  }
+}

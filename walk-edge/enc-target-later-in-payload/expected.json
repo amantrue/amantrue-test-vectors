@@ -1,0 +1,168 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "F.v": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "H.x": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Items": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Names": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.@a": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.any": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.date": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.inner.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Typed": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "r",
+      "offset": 295
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 295,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": [
+        {
+          "el": 295,
+          "nil": false,
+          "src": 0,
+          "value": "t1"
+        },
+        {
+          "el": 295,
+          "nil": false,
+          "src": 1,
+          "value": "t2"
+        }
+      ]
+    },
+    "R.@a": {
+      "items": [
+        {
+          "el": 295,
+          "nil": false,
+          "src": 0,
+          "value": "z"
+        }
+      ]
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 315,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 331,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "items": [
+        {
+          "el": 315,
+          "nil": false,
+          "src": 0,
+          "value": "N"
+        }
+      ]
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:8h/q/nTs9EWJNUZS29tkElU49wqfNS8lO22tnfh0uh0=:"
+}

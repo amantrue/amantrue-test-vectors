@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: BinarySecurityToken is not base64",
+  "ok": false
+}

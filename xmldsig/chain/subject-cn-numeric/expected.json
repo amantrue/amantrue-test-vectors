@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: leaf subject CN \"12345\" does not match \"x\"",
+  "ok": false
+}

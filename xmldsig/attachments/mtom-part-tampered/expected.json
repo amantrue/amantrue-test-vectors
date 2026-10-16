@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: digest: DigestValue of \"#body\" does not match",
+  "ok": false
+}

@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: DOCTYPE is not allowed"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: DOCTYPE is not allowed"
+  },
+  "hints": []
+}

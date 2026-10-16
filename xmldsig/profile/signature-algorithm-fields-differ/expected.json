@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate signature algorithm fields differ",
+  "ok": false
+}

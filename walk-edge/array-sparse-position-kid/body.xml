@@ -1,0 +1,1 @@
+<x:R xmlns:x="urn:x" xmlns:e="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><x:Items e:arrayType="xsd:string[2]"><i e:position="[0]">a</i><i>b</i></x:Items><Plain>p</Plain><x:T/><x:T xsi:type="x:A"/></x:R>

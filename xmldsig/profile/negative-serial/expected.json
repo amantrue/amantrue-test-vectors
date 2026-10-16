@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate serial number is negative",
+  "ok": false
+}

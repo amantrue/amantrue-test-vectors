@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: SignedInfo must hold CanonicalizationMethod, SignatureMethod and at least one Reference",
+  "ok": false
+}

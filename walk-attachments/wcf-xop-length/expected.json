@@ -1,0 +1,38 @@
+{
+  "results": {
+    "Documents.Summary.Content": {
+      "op": "LENGTH_GTE",
+      "params": [
+        "16"
+      ],
+      "output": true
+    }
+  },
+  "attachments": [
+    {
+      "path": "Documents.Summary.Content",
+      "media_type": "application/pdf",
+      "length": 69,
+      "sha256": "sha-256=:z6MYHB7jbovOXjn4SVn0VY6nujLA5FOairPIzoxxbsY=:"
+    }
+  ],
+  "required": [],
+  "variants": [
+    {
+      "name": "root-tampered",
+      "tamper": "root",
+      "error": {
+        "kind": "mime",
+        "message": "mime: root part does not match the signed manifest"
+      }
+    },
+    {
+      "name": "extra-attachment",
+      "tamper": "extra",
+      "error": {
+        "kind": "mime",
+        "message": "mime: supplied attachment is not in the signed manifest extra@amantrue"
+      }
+    }
+  ]
+}

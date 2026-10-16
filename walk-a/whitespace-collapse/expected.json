@@ -1,0 +1,43 @@
+{
+  "evaluate_results": {
+    "Patient.BirthDate": {
+      "op": "EQ",
+      "params": [
+        "1995-07-10"
+      ],
+      "output": true
+    },
+    "Patient.Name.Given": {
+      "op": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "output": false
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 321,
+          "nil": false,
+          "src": 0,
+          "value": "\n  1995-07-10\n"
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 246,
+          "nil": false,
+          "src": 0,
+          "value": " Eboni "
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:TnlWQvsvgI3B2mU4/i92iEG/WiizkYkAG3/+oLTarQY=:"
+}

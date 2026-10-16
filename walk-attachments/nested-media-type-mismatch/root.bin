@@ -1,0 +1,1 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetInvoiceResponse xmlns="urn:amantrue:demo:documents"><Invoice><Content><xop:Include href="cid:invoice@demo" xmlns:xop="http://www.w3.org/2004/08/xop/include"/></Content></Invoice></GetInvoiceResponse></s:Body></s:Envelope>

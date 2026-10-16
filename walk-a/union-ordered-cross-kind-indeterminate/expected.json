@@ -1,0 +1,27 @@
+{
+  "evaluate_results": {
+    "When": {
+      "op": "LT",
+      "params": [
+        "2026-02-01"
+      ],
+      "output": false,
+      "indeterminate": true
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "When": {
+      "items": [
+        {
+          "el": 22,
+          "nil": false,
+          "src": 0,
+          "value": "2026"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:ptB4xHyLF+QzM7XBr6s1xV2q9VlFLc29IkcDBVnaV5E=:"
+}

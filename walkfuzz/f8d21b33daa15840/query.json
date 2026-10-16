@@ -1,0 +1,1 @@
+{"Patient.@id":{"operation":{"OP":"EXISTS","params":[]}},"Patient.BirthDate":{"operation":{"OP":"LT","params":["2008-01-01"]}},"Patient.Gender":{"operation":{"OP":"SD","params":[]}},"Patient.Name.Given":{"operation":{"OP":"COUNT_GTE","params":[1]}}}

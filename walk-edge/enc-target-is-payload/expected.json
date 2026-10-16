@@ -1,0 +1,136 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "F.v": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "H.x": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Items": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Names": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.@a": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.any": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.date": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.inner.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Typed": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "p",
+      "offset": 247
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": []
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "items": []
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:L3e3Fdxkn0Ry5YeJyTim5mL9RuYM/QKH3fbfnFSomvk=:"
+}

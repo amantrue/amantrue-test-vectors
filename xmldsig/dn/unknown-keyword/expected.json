@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: X509IssuerName \"FOO=bar\" is not a supported distinguished name",
+  "ok": false
+}

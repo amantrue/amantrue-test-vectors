@@ -1,0 +1,81 @@
+{
+  "evaluate_error": {
+    "kind": "array",
+    "path": "Items.*",
+    "message": "soapenc: Items.*: multi-dimensional arrays are not supported"
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Items.*": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*",
+        "message": "soapenc: Items.*: multi-dimensional arrays are not supported"
+      }
+    },
+    "Items.*.@a": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*.@a",
+        "message": "soapenc: Items.*.@a: multi-dimensional arrays are not supported"
+      }
+    },
+    "Items.*.@x:a": {
+      "error": {
+        "kind": "array",
+        "path": "Items.*.@x:a",
+        "message": "soapenc: Items.*.@x:a: multi-dimensional arrays are not supported"
+      }
+    },
+    "Plain": {
+      "items": [
+        {
+          "el": 210,
+          "nil": false,
+          "src": 0,
+          "value": "p"
+        }
+      ]
+    },
+    "Star": {
+      "items": [
+        {
+          "el": 127,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 210,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 226,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 232,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Typed": {
+      "items": [
+        {
+          "el": 226,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 232,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:AF1Hc03JP2uxVsyACyuj9c8RUVU+81v3rmF4ROnnzI4=:"
+}

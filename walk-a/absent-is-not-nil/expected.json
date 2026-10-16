@@ -1,0 +1,17 @@
+{
+  "evaluate_results": {
+    "Patient.DeceasedDate": {
+      "op": "IS_NIL",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.DeceasedDate": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:mmnhbLhnA5oEPOwB0iKHj9ewcSDz5/I7LpyAKRrzNTk=:"
+}

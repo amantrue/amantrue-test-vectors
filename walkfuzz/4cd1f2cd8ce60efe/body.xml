@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><GetPatientResponse xmlns="urn:amantrue:demo:patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Patient id="bb7fb8e1"><Name><Given>Eboni</GiveW><Given>Rose</Given><Family>Brekke</Family></Name><Gender>female</Gender><BirthDate>1995-07-10</B

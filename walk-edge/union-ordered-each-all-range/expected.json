@@ -1,0 +1,33 @@
+{
+  "evaluate_results": {
+    "Patient.Seen": {
+      "op": "RANGE",
+      "params": [
+        "1990-01-01",
+        "2000-01-01"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Seen": {
+      "items": [
+        {
+          "el": 152,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        },
+        {
+          "el": 175,
+          "nil": false,
+          "src": 0,
+          "value": "1999-12-31"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:WMQqysoSFOVToJPEv9x2XPFe8d9+7ExLW2ezoQsSxmw=:"
+}

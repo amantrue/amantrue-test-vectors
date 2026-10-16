@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Header><h xmlns="urn:h"/></soap:Header><soap:Body><GetPatientResponse xmlns0"urn:amantrue:demo:patient"><Pa

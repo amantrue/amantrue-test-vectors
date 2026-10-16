@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: timestamp: wsu:Timestamp is not covered by the signature",
+  "ok": false
+}

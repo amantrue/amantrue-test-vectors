@@ -1,0 +1,93 @@
+{
+  "evaluate_error": {
+    "kind": "hint",
+    "path": "R.any",
+    "message": "xml: missing hint for id \"id2\""
+  },
+  "hints": [
+    {
+      "id": "id0",
+      "offset": 411
+    },
+    {
+      "id": "id1",
+      "offset": 460
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": [
+        {
+          "el": 460,
+          "nil": false,
+          "src": 0,
+          "value": "Al"
+        },
+        {
+          "el": 357,
+          "nil": false,
+          "src": 0,
+          "value": "Bo"
+        }
+      ]
+    },
+    "R": {
+      "items": [
+        {
+          "el": 411,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": []
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "error": {
+        "kind": "hint",
+        "path": "R.any",
+        "message": "xml: missing hint for id \"id2\""
+      }
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "error": {
+        "kind": "hint",
+        "path": "R.name",
+        "message": "xml: missing hint for id \"id2\""
+      }
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:aeoiUybMZCPMY/3Fej7q/6Ds1gyd04+c5R8kgEKgrlE=:"
+}

@@ -1,0 +1,8 @@
+{
+  "required": [],
+  "error": {
+    "kind": "attachment",
+    "path": "Invoice.Content",
+    "message": "attachment: Invoice.Content is application/pdf, nested binding expects xml"
+  }
+}

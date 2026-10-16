@@ -1,0 +1,24 @@
+{
+  "evaluate_results": {
+    "Patient.Gender": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": "\u003cf\u0026 m AA\n"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:bqmbUFCnDICuUyFyqLLJ2d7IbS7mQsKR7+jMVFW03b0=:"
+}

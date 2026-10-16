@@ -1,0 +1,15 @@
+{
+  "evaluate_error": {
+    "kind": "absent",
+    "path": "Patient.DeceasedDate",
+    "message": "field absent: Patient.DeceasedDate"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.DeceasedDate": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:mmnhbLhnA5oEPOwB0iKHj9ewcSDz5/I7LpyAKRrzNTk=:"
+}

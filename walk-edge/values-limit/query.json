@@ -1,0 +1,14 @@
+{
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Name.Given": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

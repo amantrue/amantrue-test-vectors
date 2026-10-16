@@ -1,0 +1,64 @@
+{
+  "results": {
+    "Documents.Record.Content": {
+      "op": "MEDIA_TYPE_IN",
+      "params": [
+        "application/xml"
+      ],
+      "output": true
+    },
+    "Documents.Record.Content.entry.fullUrl.@value": {
+      "op": "COUNT_GTE",
+      "params": [
+        "2"
+      ],
+      "output": true
+    }
+  },
+  "attachments": [
+    {
+      "path": "Documents.Record.Content",
+      "media_type": "application/xml",
+      "length": 447,
+      "nested_binding_hash": "sha-256=:R6mq4HxV+jo+TfeuZqT701D+Of1buobKCPVeG4uXl28=:"
+    }
+  ],
+  "required": [
+    "bundle@demo"
+  ],
+  "variants": [
+    {
+      "name": "root-tampered",
+      "tamper": "root",
+      "error": {
+        "kind": "mime",
+        "message": "mime: root part does not match the signed manifest"
+      }
+    },
+    {
+      "name": "extra-attachment",
+      "tamper": "extra",
+      "error": {
+        "kind": "mime",
+        "message": "mime: supplied attachment is not in the signed manifest extra@amantrue"
+      }
+    },
+    {
+      "name": "attachment-tampered",
+      "tamper": "flip:bundle@demo",
+      "error": {
+        "kind": "mime",
+        "message": "mime: supplied attachment does not match the signed manifest bundle@demo"
+      }
+    },
+    {
+      "name": "attachment-withheld",
+      "tamper": "drop:bundle@demo",
+      "error": {
+        "kind": "mime",
+        "path": "Documents.Record.Content",
+        "message": "mime: attachment bytes withheld bundle@demo"
+      }
+    }
+  ]
+}

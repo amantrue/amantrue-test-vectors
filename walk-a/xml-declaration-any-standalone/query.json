@@ -1,0 +1,10 @@
+{
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "female"
+      ]
+    }
+  }
+}

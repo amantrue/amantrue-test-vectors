@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: content type \"application/json\" is not XML"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: content type \"application/json\" is not XML"
+  },
+  "hints": []
+}

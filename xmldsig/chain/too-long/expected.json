@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: chain longer than max_chain 2",
+  "ok": false
+}

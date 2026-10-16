@@ -1,0 +1,20 @@
+{
+  "Patient.DeceasedDate": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Name": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

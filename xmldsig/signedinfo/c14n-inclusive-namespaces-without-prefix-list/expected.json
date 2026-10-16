@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: CanonicalizationMethod holds an unsupported element",
+  "ok": false
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: RSA key size 1024 is outside 2048-4096",
+  "ok": false
+}

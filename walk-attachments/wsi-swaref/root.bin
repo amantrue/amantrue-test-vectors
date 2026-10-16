@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ClaimDetailResponse xmlns="urn:wsi:swaref"><ClaimForm>cid:claim%2Bform@example.org</ClaimForm></ClaimDetailResponse></soap:Body></soap:Envelope>

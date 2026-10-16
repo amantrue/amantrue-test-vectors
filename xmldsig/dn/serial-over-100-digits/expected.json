@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: X509SerialNumber is not a decimal integer",
+  "ok": false
+}

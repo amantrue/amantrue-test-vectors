@@ -1,0 +1,7 @@
+{
+  "required": [],
+  "error": {
+    "kind": "mime",
+    "message": "mime: start-info application/soap+xml does not match SOAP 1.1"
+  }
+}

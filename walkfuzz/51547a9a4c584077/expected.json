@@ -1,0 +1,50 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "Patient.BirthDate",
+    "message": "xsd: Patient.BirthDate: \"6008-13-01\" is not a valid date"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 321,
+          "nil": false,
+          "src": 0,
+          "value": "x"
+        }
+      ]
+    },
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 272,
+          "nil": false,
+          "src": 0,
+          "value": "6008-13-01"
+        }
+      ]
+    },
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 246,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 212,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:+ytifJ36skPfYoSqWKpcTNzt8TqsuwXzHO7kFpmZ1Z8=:"
+}

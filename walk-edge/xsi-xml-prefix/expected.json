@@ -1,0 +1,42 @@
+{
+  "evaluate_error": {
+    "kind": "xsi_type",
+    "path": "Patient.Party.~Organization.LegalName",
+    "message": "xsd: Patient.Party.~Organization.LegalName: xsi:type {http://www.w3.org/XML/1998/namespace}lang not allowed"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Party": {
+      "items": [
+        {
+          "el": 242,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Party.~Organization.LegalName": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Organization.LegalName",
+        "message": "xsd: Patient.Party.~Organization.LegalName: xsi:type {http://www.w3.org/XML/1998/namespace}lang not allowed"
+      }
+    },
+    "Patient.Party.~Person": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Person",
+        "message": "xsd: Patient.Party.~Person: xsi:type {http://www.w3.org/XML/1998/namespace}lang not allowed"
+      }
+    },
+    "Patient.Party.~Person.Name": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Person.Name",
+        "message": "xsd: Patient.Party.~Person.Name: xsi:type {http://www.w3.org/XML/1998/namespace}lang not allowed"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:hyPs+SvVyTMedgkc7NE7AAj3H0dtUYnonKMxwTJedxo=:"
+}

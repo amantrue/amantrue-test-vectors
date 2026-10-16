@@ -1,0 +1,41 @@
+{
+  "evaluate_results": {
+    "Amount.#text": {
+      "op": "SD",
+      "params": [],
+      "output": "12.50"
+    },
+    "Amount.@currency": {
+      "op": "EQ",
+      "params": [
+        "USD"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Amount.#text": {
+      "items": [
+        {
+          "el": 27,
+          "nil": false,
+          "src": 0,
+          "value": "12.50"
+        }
+      ]
+    },
+    "Amount.@currency": {
+      "items": [
+        {
+          "el": 27,
+          "nil": false,
+          "src": 0,
+          "value": "USD"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:1VLt8vAo2cX/vKn6C1HIeOWWyTME2pcSGz+BJE8wNWM=:"
+}

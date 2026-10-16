@@ -1,0 +1,19 @@
+{
+  "evaluate_error": {
+    "kind": "xsi_type",
+    "path": "Patient.Party.~Person.Name",
+    "message": "xsd: Patient.Party.~Person.Name: xsi:type {urn:amantrue:demo:patient}Alien not allowed"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Party.~Person.Name": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Patient.Party.~Person.Name",
+        "message": "xsd: Patient.Party.~Person.Name: xsi:type {urn:amantrue:demo:patient}Alien not allowed"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:HlhLHaqp9pTGfkRLPRQNiJv2gMcO5/SMcECi4Zie7LI=:"
+}

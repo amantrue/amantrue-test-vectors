@@ -1,0 +1,36 @@
+{
+  "evaluate_results": {
+    "Patient.Address.State": {
+      "op": "EQ",
+      "params": [
+        "Massachusetts"
+      ],
+      "output": true
+    },
+    "Patient.DeceasedDate": {
+      "op": "EQ",
+      "params": [
+        "2000-01-01"
+      ],
+      "output": false
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Address.State": {
+      "items": [
+        {
+          "el": 368,
+          "nil": false,
+          "src": 0,
+          "value": "Massachusetts"
+        }
+      ]
+    },
+    "Patient.DeceasedDate": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:mmnhbLhnA5oEPOwB0iKHj9ewcSDz5/I7LpyAKRrzNTk=:"
+}

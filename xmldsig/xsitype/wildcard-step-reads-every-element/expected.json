@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: xsi:type prefix \"xsd\" is not bound inside the signed content",
+  "ok": false
+}

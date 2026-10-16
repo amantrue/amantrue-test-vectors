@@ -1,0 +1,17 @@
+--part-boundary
+Content-Type: text/xml; charset=UTF-8
+Content-Transfer-Encoding: binary
+Content-ID: <root@reports.example.org>
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><GetReportResponse xmlns="urn:reports"><Status>ready</Status></GetReportResponse></soap:Body></soap:Envelope>
+--part-boundary
+Content-ID: <Other=1@reports.example.org>
+Content-Type: application/pdf
+Content-Transfer-Encoding: binary
+
+%PDF-1.4
+1 0 obj<</Type/Catalog>>endobj
+trailer<</Root 1 0 R>>
+%%EOF
+
+--part-boundary--

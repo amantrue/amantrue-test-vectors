@@ -1,0 +1,49 @@
+{
+  "evaluate_results": {
+    "GetPatientResult.BirthDate": {
+      "op": "LT",
+      "params": [
+        "1995-07-10T00:00:00Z"
+      ],
+      "output": false,
+      "indeterminate": true
+    },
+    "GetPatientResult.GivenNames.string": {
+      "op": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 72,
+  "rows": {
+    "GetPatientResult.BirthDate": {
+      "items": [
+        {
+          "el": 248,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10T05:00:00"
+        }
+      ]
+    },
+    "GetPatientResult.GivenNames.string": {
+      "items": [
+        {
+          "el": 343,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        },
+        {
+          "el": 369,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:P/w4ogZrP0wqY+VrtYbSxYvSZWXMFT61V7HHaZlRouE=:"
+}

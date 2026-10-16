@@ -1,0 +1,14 @@
+--uuid:cxf
+Content-Type: application/xop+xml; charset=UTF-8; type="text/xml"
+Content-Transfer-Encoding: binary
+Content-ID: <root.message@cxf.apache.org>
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPatientDocumentsResponse xmlns="urn:amantrue:demo:documents"><Documents><Summary><Title>Patient summary</Title><Content><xop:Include href="cid:5aeaa450-17f0-4484-b845-a8480c363444-1@cxf.apache.org" xmlns:xop="http://www.w3.org/2004/08/xop/include"/></Content></Summary><Thumbnail xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmime:contentType="image/png">iVBORw0KGgo=</Thumbnail></Documents></GetPatientDocumentsResponse></s:Body></s:Envelope>
+--uuid:cxf
+Content-ID: <5aeaa450-17f0-4484-b845-a8480c363444-1@cxf.apache.org>
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjQKMSAwIG9iajw8L1R5cGUvQ2F0YWxvZz4+ZW5kb2JqCnRyYWlsZXI8PC9Sb290IDEg
+MCBSPj4KJSVFT0YK
+--uuid:cxf--

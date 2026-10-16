@@ -1,0 +1,107 @@
+{
+  "evaluate_error": {
+    "kind": "hint",
+    "path": "R",
+    "message": "xml: missing hint for id \"id0\""
+  },
+  "hints": [
+    {
+      "id": "id1",
+      "offset": 460
+    },
+    {
+      "id": "id2",
+      "offset": 514
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": [
+        {
+          "el": 460,
+          "nil": false,
+          "src": 0,
+          "value": "Al"
+        },
+        {
+          "el": 357,
+          "nil": false,
+          "src": 0,
+          "value": "Bo"
+        }
+      ]
+    },
+    "R": {
+      "error": {
+        "kind": "hint",
+        "path": "R",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "R.#text": {
+      "error": {
+        "kind": "hint",
+        "path": "R.#text",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "R.@a": {
+      "error": {
+        "kind": "hint",
+        "path": "R.@a",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "R.any": {
+      "error": {
+        "kind": "hint",
+        "path": "R.any",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "R.date": {
+      "error": {
+        "kind": "hint",
+        "path": "R.date",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "R.inner.name": {
+      "error": {
+        "kind": "hint",
+        "path": "R.inner.name",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "R.name": {
+      "error": {
+        "kind": "hint",
+        "path": "R.name",
+        "message": "xml: missing hint for id \"id0\""
+      }
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:aeoiUybMZCPMY/3Fej7q/6Ds1gyd04+c5R8kgEKgrlE=:"
+}

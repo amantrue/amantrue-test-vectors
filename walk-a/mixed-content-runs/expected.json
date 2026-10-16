@@ -1,0 +1,66 @@
+{
+  "evaluate_results": {
+    "#text": {
+      "op": "COUNT_EQ",
+      "params": [
+        "2"
+      ],
+      "output": true
+    },
+    "b": {
+      "op": "COUNT_EQ",
+      "params": [
+        "1"
+      ],
+      "output": true
+    },
+    "code": {
+      "op": "EQ",
+      "params": [
+        "A1"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "#text": {
+      "items": [
+        {
+          "el": 0,
+          "nil": false,
+          "src": 0,
+          "value": "Hello"
+        },
+        {
+          "el": 0,
+          "nil": false,
+          "src": 1,
+          "value": "world"
+        }
+      ]
+    },
+    "b": {
+      "items": [
+        {
+          "el": 39,
+          "nil": false,
+          "src": 0,
+          "value": "big"
+        }
+      ]
+    },
+    "code": {
+      "items": [
+        {
+          "el": 56,
+          "nil": false,
+          "src": 0,
+          "value": " A1 "
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:4eUF8dtin6OX9ncT3gHuNEmqF/neZzY/QzIWTBAzYX8=:"
+}

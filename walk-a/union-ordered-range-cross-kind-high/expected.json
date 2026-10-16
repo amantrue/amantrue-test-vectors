@@ -1,0 +1,28 @@
+{
+  "evaluate_results": {
+    "When": {
+      "op": "RANGE",
+      "params": [
+        "2025-12-31",
+        "2027"
+      ],
+      "output": false,
+      "indeterminate": true
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "When": {
+      "items": [
+        {
+          "el": 22,
+          "nil": false,
+          "src": 0,
+          "value": "2026-01-05"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:wjAOS7S8JQWHa1E86U9wEqEl4ltlhLK7Cx9gNUJBCyo=:"
+}

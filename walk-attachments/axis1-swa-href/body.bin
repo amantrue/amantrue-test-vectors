@@ -1,0 +1,17 @@
+------=_Part_0_1234.5678
+Content-Type: text/xml; charset=UTF-8
+Content-Transfer-Encoding: binary
+Content-Id: <8D3E2E1A2C>
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:getDocumentResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="urn:legacy:docs"><title xsi:type="xsd:string">Patient summary</title><document href="cid:0F9F4F5A2B5C7D8E9A0B1C2D3E4F5A6B"/></ns1:getDocumentResponse></soapenv:Body></soapenv:Envelope>
+------=_Part_0_1234.5678
+Content-ID: <0F9F4F5A2B5C7D8E9A0B1C2D3E4F5A6B>
+Content-Type: application/pdf
+Content-Transfer-Encoding: binary
+
+%PDF-1.4
+1 0 obj<</Type/Catalog>>endobj
+trailer<</Root 1 0 R>>
+%%EOF
+
+------=_Part_0_1234.5678--

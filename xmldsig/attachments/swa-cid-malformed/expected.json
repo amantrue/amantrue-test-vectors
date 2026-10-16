@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: Reference URI \"cid:\" is not a valid cid url",
+  "ok": false
+}

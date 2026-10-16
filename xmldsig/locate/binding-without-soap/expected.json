@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: signed_parts needs a SOAP binding",
+  "ok": false
+}

@@ -1,0 +1,7 @@
+{
+  "required": [],
+  "error": {
+    "kind": "mime",
+    "message": "mime: media type multipart/mixed is not multipart/related"
+  }
+}

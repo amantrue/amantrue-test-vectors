@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: KeyIdentifier ValueType \"http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLID\" is not supported",
+  "ok": false
+}

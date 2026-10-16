@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: content before the XML declaration"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: content before the XML declaration"
+  },
+  "hints": []
+}

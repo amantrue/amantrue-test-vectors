@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: row \"document\" lies outside the signed content",
+  "ok": false
+}

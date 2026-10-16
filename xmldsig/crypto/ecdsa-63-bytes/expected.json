@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: ECDSA SignatureValue must be 64 bytes, got 63",
+  "ok": false
+}

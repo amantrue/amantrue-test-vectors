@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: element depth exceeds 64"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: element depth exceeds 64"
+  },
+  "hints": []
+}

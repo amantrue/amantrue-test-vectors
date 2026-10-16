@@ -1,0 +1,25 @@
+{
+  "getPatientReturn.birthDate": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "2008-01-01"
+      ]
+    }
+  },
+  "getPatientReturn.names": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "each": "ANY"
+    }
+  },
+  "getPatientReturn.family": {
+    "operation": {
+      "OP": "SD",
+      "params": []
+    }
+  }
+}

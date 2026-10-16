@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: SignedInfo has more than 16 references",
+  "ok": false
+}

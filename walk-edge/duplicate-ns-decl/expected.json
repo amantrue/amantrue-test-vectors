@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: duplicate namespace declaration"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: duplicate namespace declaration"
+  },
+  "hints": []
+}

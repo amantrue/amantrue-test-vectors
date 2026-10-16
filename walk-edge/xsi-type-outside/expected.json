@@ -1,0 +1,19 @@
+{
+  "evaluate_error": {
+    "kind": "xsi_type",
+    "path": "Party.~Person.Name",
+    "message": "xsd: Party.~Person.Name: xsi:type {urn:amantrue:demo:patient}Robot not allowed"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Party.~Person.Name": {
+      "error": {
+        "kind": "xsi_type",
+        "path": "Party.~Person.Name",
+        "message": "xsd: Party.~Person.Name: xsi:type {urn:amantrue:demo:patient}Robot not allowed"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:v1kPLSeNqnLHYjtXd3L3jlVGhhh49m618feQXGoc66w=:"
+}

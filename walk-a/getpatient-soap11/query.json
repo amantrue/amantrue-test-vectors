@@ -1,0 +1,53 @@
+{
+  "Patient.BirthDate": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "2008-01-01"
+      ]
+    }
+  },
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "female"
+      ]
+    }
+  },
+  "Patient.Name.Given": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "each": "ANY"
+    }
+  },
+  "Patient.DeceasedDate": {
+    "operation": {
+      "OP": "IS_NIL",
+      "params": []
+    }
+  },
+  "Patient.Party.~Person": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.@id": {
+    "operation": {
+      "OP": "SD",
+      "params": []
+    }
+  },
+  "Patient.Source": {
+    "operation": {
+      "OP": "LENGTH_GTE",
+      "params": [
+        20
+      ]
+    }
+  }
+}

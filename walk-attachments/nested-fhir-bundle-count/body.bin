@@ -1,0 +1,23 @@
+--uuid:5a1b+id=1
+Content-ID: <http://tempuri.org/0>
+Content-Transfer-Encoding: 8bit
+Content-Type: application/xop+xml;charset=utf-8;type="text/xml"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetPatientDocumentsResponse xmlns="urn:amantrue:demo:documents"><Documents><Summary><Title>Patient summary</Title><Content><xop:Include href="cid:http%3A%2F%2Ftempuri.org%2F1%2F638123" xmlns:xop="http://www.w3.org/2004/08/xop/include"/></Content></Summary><Thumbnail xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmime:contentType="image/png">iVBORw0KGgo=</Thumbnail><Record><Content><xop:Include href="cid:bundle@demo" xmlns:xop="http://www.w3.org/2004/08/xop/include"/></Content></Record></Documents></GetPatientDocumentsResponse></s:Body></s:Envelope>
+--uuid:5a1b+id=1
+Content-ID: <http://tempuri.org/1/638123>
+Content-Type: application/pdf
+Content-Transfer-Encoding: binary
+
+%PDF-1.4
+1 0 obj<</Type/Catalog>>endobj
+trailer<</Root 1 0 R>>
+%%EOF
+
+--uuid:5a1b+id=1
+Content-ID: <bundle@demo>
+Content-Type: application/xml
+Content-Transfer-Encoding: binary
+
+<?xml version="1.0" encoding="UTF-8"?><Bundle xmlns="http://hl7.org/fhir"><type value="collection"/><entry><fullUrl value="urn:uuid:bb7fb8e1-1a76-4328-92ea-3852f34846e6"/><resource><Patient><id value="bb7fb8e1-1a76-4328-92ea-3852f34846e6"/></Patient></resource></entry><entry><fullUrl value="urn:uuid:7f377edc-2971-41d6-aecf-db9dabffe9dd"/><resource><Patient><id value="7f377edc-2971-41d6-aecf-db9dabffe9dd"/></Patient></resource></entry></Bundle>
+--uuid:5a1b+id=1--

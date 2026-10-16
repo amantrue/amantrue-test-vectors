@@ -1,0 +1,31 @@
+{
+  "results": {
+    "Documents.Summary.Content": {
+      "op": "LENGTH_EQ",
+      "params": [
+        "69"
+      ],
+      "output": true
+    },
+    "Documents.Thumbnail": {
+      "op": "MEDIA_TYPE_IN",
+      "params": [
+        "image/png"
+      ],
+      "output": true
+    }
+  },
+  "attachments": [
+    {
+      "path": "Documents.Summary.Content",
+      "media_type": "application/pdf",
+      "length": 69
+    },
+    {
+      "path": "Documents.Thumbnail",
+      "media_type": "image/png",
+      "length": 8
+    }
+  ],
+  "required": []
+}

@@ -1,0 +1,16 @@
+{
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "female"
+      ]
+    }
+  },
+  "Patient.Party.~Person.Name": {
+    "operation": {
+      "OP": "SD",
+      "params": []
+    }
+  }
+}

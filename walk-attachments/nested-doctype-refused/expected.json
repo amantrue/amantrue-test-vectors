@@ -1,0 +1,10 @@
+{
+  "required": [
+    "invoice@demo"
+  ],
+  "error": {
+    "kind": "input",
+    "path": "Invoice.Content",
+    "message": "xml: DOCTYPE is not allowed"
+  }
+}

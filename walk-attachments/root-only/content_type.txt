@@ -1,0 +1,1 @@
+multipart/related; type="application/xop+xml"; start="<r@cxf>"; start-info="text/xml"; boundary="b1"

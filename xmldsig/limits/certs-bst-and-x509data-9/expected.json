@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: the message carries more than 8 certificates",
+  "ok": false
+}

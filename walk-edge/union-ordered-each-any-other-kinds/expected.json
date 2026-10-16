@@ -1,0 +1,33 @@
+{
+  "evaluate_results": {
+    "Patient.Seen": {
+      "op": "GTE",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": false,
+      "indeterminate": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Seen": {
+      "items": [
+        {
+          "el": 152,
+          "nil": false,
+          "src": 0,
+          "value": "2010"
+        },
+        {
+          "el": 169,
+          "nil": false,
+          "src": 0,
+          "value": "2001-02"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:0z2aHKecSewbS3UTwzlNHwPXIwCJiAjGi6W6tfbYDwg=:"
+}

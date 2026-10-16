@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: payload is not covered by the signature",
+  "ok": false
+}

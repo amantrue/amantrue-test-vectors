@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: wsse:Security holds more than 4 ds:Signature elements",
+  "ok": false
+}

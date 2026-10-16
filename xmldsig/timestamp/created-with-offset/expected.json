@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: timestamp: wsu:Created \"2026-10-02T13:59:30+02:00\" is not a UTC dateTime",
+  "ok": false
+}

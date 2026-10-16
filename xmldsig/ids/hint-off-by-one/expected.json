@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: resolve_ids: hint for id \"ts\" does not point at the element that carries it",
+  "ok": false
+}

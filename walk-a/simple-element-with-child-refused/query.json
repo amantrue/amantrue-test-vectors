@@ -1,0 +1,8 @@
+{
+  "Patient.Gender": {
+    "operation": {
+      "OP": "SD",
+      "params": []
+    }
+  }
+}

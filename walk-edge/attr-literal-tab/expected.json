@@ -1,0 +1,26 @@
+{
+  "evaluate_results": {
+    "Patient.@id": {
+      "op": "EQ",
+      "params": [
+        "a\tb"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0,
+          "value": "a\tb"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:jWDzui8LQ9uw9JU1Dc7nkw3l0ccT3Vg4bmlrLVebEbw=:"
+}

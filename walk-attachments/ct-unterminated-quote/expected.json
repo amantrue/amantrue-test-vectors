@@ -1,0 +1,7 @@
+{
+  "required": [],
+  "error": {
+    "kind": "mime",
+    "message": "mime: malformed content-type"
+  }
+}

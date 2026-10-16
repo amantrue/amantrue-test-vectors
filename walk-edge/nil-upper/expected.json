@@ -1,0 +1,32 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "Patient.Gender",
+    "message": "xsd: Patient.Gender: element content where a simple value is expected"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.DeceasedDate": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": ""
+        }
+      ]
+    },
+    "Patient.Gender": {
+      "error": {
+        "kind": "lexical",
+        "path": "Patient.Gender",
+        "message": "xsd: Patient.Gender: element content where a simple value is expected"
+      }
+    },
+    "Patient.Name": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:YMBljUkYxERtmAk/oaCOdgRj+EbsRcwu9+14/yX2Gug=:"
+}

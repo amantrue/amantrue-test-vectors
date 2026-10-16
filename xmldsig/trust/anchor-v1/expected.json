@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: anchor \"sha256:MIzSLqUhQ6YC38k1zlzc5snqgg5hql4oey/XS1Ba9pA=\": certificate is not X.509 v3",
+  "ok": false
+}

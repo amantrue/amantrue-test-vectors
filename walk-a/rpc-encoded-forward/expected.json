@@ -1,0 +1,67 @@
+{
+  "evaluate_results": {
+    "getPatientReturn.birthDate": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": true
+    },
+    "getPatientReturn.family": {
+      "op": "SD",
+      "params": [],
+      "output": "Brekke"
+    },
+    "getPatientReturn.names": {
+      "op": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "output": true
+    }
+  },
+  "hints": [
+    {
+      "id": "id0",
+      "offset": 372
+    },
+    {
+      "id": "id1",
+      "offset": 851
+    }
+  ],
+  "payload_start": 189,
+  "rows": {
+    "getPatientReturn.birthDate": {
+      "items": [
+        {
+          "el": 787,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        }
+      ]
+    },
+    "getPatientReturn.family": {
+      "items": [
+        {
+          "el": 689,
+          "nil": false,
+          "src": 0,
+          "value": "Brekke"
+        }
+      ]
+    },
+    "getPatientReturn.names": {
+      "items": [
+        {
+          "el": 1070,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:BrZQh/vmLS8SDfox3vFS1sOCvqH8Q5MtmSCkc1DPNyU=:"
+}

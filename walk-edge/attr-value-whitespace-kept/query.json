@@ -1,0 +1,8 @@
+{
+  "Patient.@id": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

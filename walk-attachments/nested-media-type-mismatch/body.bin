@@ -1,0 +1,17 @@
+--inv
+Content-ID: <root@demo>
+Content-Transfer-Encoding: binary
+Content-Type: application/xop+xml; charset=utf-8; type="text/xml"
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/"><s:Body><GetInvoiceResponse xmlns="urn:amantrue:demo:documents"><Invoice><Content><xop:Include href="cid:invoice@demo" xmlns:xop="http://www.w3.org/2004/08/xop/include"/></Content></Invoice></GetInvoiceResponse></s:Body></s:Envelope>
+--inv
+Content-ID: <invoice@demo>
+Content-Type: application/pdf
+Content-Transfer-Encoding: binary
+
+%PDF-1.4
+1 0 obj<</Type/Catalog>>endobj
+trailer<</Root 1 0 R>>
+%%EOF
+
+--inv--

@@ -1,0 +1,8 @@
+{
+  "required": [],
+  "error": {
+    "kind": "attachment",
+    "path": "Documents.Summary.Content",
+    "message": "attachment: Documents.Summary.Content is 5000 bytes, EQ needs at most 4096"
+  }
+}

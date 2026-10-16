@@ -1,0 +1,19 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "Patient.Gender",
+    "message": "xsd: Patient.Gender: element content where a simple value is expected"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Gender": {
+      "error": {
+        "kind": "lexical",
+        "path": "Patient.Gender",
+        "message": "xsd: Patient.Gender: element content where a simple value is expected"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:5xTSaZvUNtyeNcuFVv4eQwodxv420/kVKTKvQJ+iUEs=:"
+}

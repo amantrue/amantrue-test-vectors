@@ -1,0 +1,171 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "F.v": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "H.x": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Items": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Names": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.@a": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.any": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.date": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.inner.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Typed": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "r0",
+      "offset": 305
+    },
+    {
+      "id": "r1",
+      "offset": 335
+    },
+    {
+      "id": "r2",
+      "offset": 365
+    },
+    {
+      "id": "r3",
+      "offset": 395
+    },
+    {
+      "id": "r4",
+      "offset": 425
+    },
+    {
+      "id": "r5",
+      "offset": 455
+    },
+    {
+      "id": "r6",
+      "offset": 485
+    },
+    {
+      "id": "r7",
+      "offset": 515
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 515,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": []
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 533,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "items": [
+        {
+          "el": 533,
+          "nil": false,
+          "src": 0,
+          "value": "x"
+        }
+      ]
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:vcoLA0tTRIhhTzjnkTLi18XLlnTdrNnVu9YfSyP9dpc=:"
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate is not valid DER",
+  "ok": false
+}

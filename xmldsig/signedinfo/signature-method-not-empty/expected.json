@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: SignatureMethod must be empty",
+  "ok": false
+}

@@ -1,0 +1,8 @@
+{
+  "Patient.BirthDate": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

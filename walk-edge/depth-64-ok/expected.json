@@ -1,0 +1,47 @@
+{
+  "evaluate_results": {
+    "Patient.@id": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Gender": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Name.Given": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0,
+          "value": "p1"
+        }
+      ]
+    },
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": "f"
+        }
+      ]
+    },
+    "Patient.Name.Given": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:kmUq+xQ0XcCBbsuB4DcaB1rn5jB66lithnyYNpgZOFs=:"
+}

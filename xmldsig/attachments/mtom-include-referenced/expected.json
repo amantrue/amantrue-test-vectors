@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: digest: Reference \"#inc\" points into an xop:Include",
+  "ok": false
+}

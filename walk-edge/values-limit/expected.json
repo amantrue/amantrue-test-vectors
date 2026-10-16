@@ -1,0 +1,22 @@
+{
+  "evaluate_error": {
+    "kind": "input",
+    "path": "Patient.Name.Given",
+    "message": "xml: Patient.Name.Given has more than 4096 values"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Gender": {
+      "items": []
+    },
+    "Patient.Name.Given": {
+      "error": {
+        "kind": "input",
+        "path": "Patient.Name.Given",
+        "message": "xml: Patient.Name.Given has more than 4096 values"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:4Now3SkcAyaB4AcBAvjxaX/+OdiVZPThq8JwGgXPwAU=:"
+}

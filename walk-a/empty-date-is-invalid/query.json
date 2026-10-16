@@ -1,0 +1,10 @@
+{
+  "Patient.DeceasedDate": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "2000-01-01"
+      ]
+    }
+  }
+}

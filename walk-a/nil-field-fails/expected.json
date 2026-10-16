@@ -1,0 +1,21 @@
+{
+  "evaluate_error": {
+    "kind": "nil",
+    "path": "Patient.DeceasedDate",
+    "message": "field is nil: Patient.DeceasedDate"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.DeceasedDate": {
+      "items": [
+        {
+          "el": 352,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:T6etlKg/4GyQn9Zti+XM4hOiZTgWAibNy5Bc9d7qxgA=:"
+}

@@ -1,0 +1,26 @@
+{
+  "Patient.Party": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Party.~Organization.LegalName": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Party.~Person": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  },
+  "Patient.Party.~Person.Name": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "evaluate_results": {
+    "Checksum": {
+      "op": "EQ",
+      "params": [
+        "0fa0"
+      ],
+      "output": true
+    },
+    "Codes": {
+      "op": "LENGTH_EQ",
+      "params": [
+        "3"
+      ],
+      "output": true
+    },
+    "Photo": {
+      "op": "SHA256_EQ",
+      "params": [
+        "sha-256=:LPJNul+wow4m6DsqxbninhsWHlwfp0JecwQzYpOLmCQ=:"
+      ],
+      "output": true
+    },
+    "Score": {
+      "op": "GTE",
+      "params": [
+        "10.5"
+      ],
+      "output": true
+    },
+    "Tags": {
+      "op": "COUNT_EQ",
+      "params": [
+        "3"
+      ],
+      "output": true
+    },
+    "When": {
+      "op": "EQ",
+      "params": [
+        "2026"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Checksum": {
+      "items": [
+        {
+          "el": 107,
+          "nil": false,
+          "src": 0,
+          "value": "0FA0"
+        }
+      ]
+    },
+    "Codes": {
+      "items": [
+        {
+          "el": 22,
+          "nil": false,
+          "src": 0,
+          "value": " ABC  DEF "
+        }
+      ]
+    },
+    "Photo": {
+      "items": [
+        {
+          "el": 84,
+          "nil": false,
+          "src": 0,
+          "value": "aGVsbG8="
+        }
+      ]
+    },
+    "Score": {
+      "items": [
+        {
+          "el": 64,
+          "nil": false,
+          "src": 0,
+          "value": "10.50"
+        }
+      ]
+    },
+    "Tags": {
+      "items": [
+        {
+          "el": 132,
+          "nil": false,
+          "src": 0,
+          "value": "a b c"
+        }
+      ]
+    },
+    "When": {
+      "items": [
+        {
+          "el": 47,
+          "nil": false,
+          "src": 0,
+          "value": "2026"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:TjGh2D4eMqhzR0YZOJuwu5DDSaonjj6cv8861WE4Qns=:"
+}

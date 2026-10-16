@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate is not X.509 v3",
+  "ok": false
+}

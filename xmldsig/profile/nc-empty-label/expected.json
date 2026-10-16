@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate extension 2.5.29.30 is malformed",
+  "ok": false
+}

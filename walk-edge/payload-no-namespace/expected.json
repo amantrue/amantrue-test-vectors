@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "payload",
+    "message": "xml: payload is GetPatientResponse, binding expects {urn:amantrue:demo:patient}GetPatientResponse"
+  },
+  "evaluate_error": {
+    "kind": "payload",
+    "message": "xml: payload is GetPatientResponse, binding expects {urn:amantrue:demo:patient}GetPatientResponse"
+  },
+  "hints": []
+}

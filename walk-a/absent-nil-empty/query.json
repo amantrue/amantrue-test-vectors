@@ -1,0 +1,22 @@
+{
+  "Patient.DeceasedDate": {
+    "operation": {
+      "OP": "ABSENT_OR_NIL",
+      "params": []
+    }
+  },
+  "Patient.Address.City": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        ""
+      ]
+    }
+  },
+  "Patient.Address": {
+    "operation": {
+      "OP": "EXISTS",
+      "params": []
+    }
+  }
+}

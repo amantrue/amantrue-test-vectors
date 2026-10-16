@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: timestamp: response has no wsu:Timestamp",
+  "ok": false
+}

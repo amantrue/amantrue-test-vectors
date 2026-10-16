@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "signer": {
+    "anchor_fingerprint": "sha256:Vhr03vFn+mTeeisgYk9PIQ8SI9ujOgwHKhZUmB0AuYc=",
+    "covered": [
+      "addressing",
+      "payload",
+      "timestamp"
+    ],
+    "digest_alg": "sha256",
+    "leaf_fingerprint": "sha256:lHE/sXoigIZgfwG2hMLjwcqBgzXvimWX75bQqEorfDc=",
+    "legacy_sha1": false,
+    "signature_alg": "rsa-sha256",
+    "signed_created": "2026-10-02T11:59:30Z"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "evaluate_error": {
+    "kind": "binding",
+    "path": "Né\"",
+    "message": "aqp: \"N\\u{E9}\\u{22}\" is not a field of the binding"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Né\"": {
+      "error": {
+        "kind": "binding",
+        "path": "Né\"",
+        "message": "aqp: \"N\\u{E9}\\u{22}\" is not a field of the binding"
+      }
+    }
+  },
+  "payload_c14n_digest": "sha-256=:ZeurJDImT3XcBVhrk/+IdD9Z6G+2Nj9lBsqiVeEcuss=:"
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: row \"document\" has a part of type text/plain, binding allows application/pdf",
+  "ok": false
+}

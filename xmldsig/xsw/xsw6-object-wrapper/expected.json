@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: ds:Signature must hold exactly SignedInfo, SignatureValue and KeyInfo",
+  "ok": false
+}

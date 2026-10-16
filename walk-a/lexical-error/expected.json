@@ -1,0 +1,22 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "Patient.BirthDate",
+    "message": "xsd: Patient.BirthDate: \"1995-13-10\" is not a valid date"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 319,
+          "nil": false,
+          "src": 0,
+          "value": "1995-13-10"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:PcJ1m9978v+xAo9EFW0PoBT9TZZ+Kr87/1xLuAHRGTI=:"
+}

@@ -1,0 +1,10 @@
+{
+  "Patient.BirthDate": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "2008-01-01"
+      ]
+    }
+  }
+}

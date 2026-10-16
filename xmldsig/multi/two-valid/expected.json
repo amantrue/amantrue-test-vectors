@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: ambiguous signatures: 2 of 2 verify",
+  "ok": false
+}

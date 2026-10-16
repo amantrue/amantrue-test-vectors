@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: reserved namespace prefix or URI cannot be rebound"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: reserved namespace prefix or URI cannot be rebound"
+  },
+  "hints": []
+}

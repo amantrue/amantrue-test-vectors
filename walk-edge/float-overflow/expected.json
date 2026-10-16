@@ -1,0 +1,26 @@
+{
+  "evaluate_results": {
+    "Patient.Ratio": {
+      "op": "GT",
+      "params": [
+        "1.7e308"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Ratio": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": "1e400"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:bIXd8FYu0EJCp/4jPBeaujpd5wFtuwwTmk6iVx4h4U4=:"
+}

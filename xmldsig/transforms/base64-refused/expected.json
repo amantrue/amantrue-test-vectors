@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signed_info: Reference \"#ts\" transforms are not [exc-c14n] or [enveloped-signature, exc-c14n]",
+  "ok": false
+}

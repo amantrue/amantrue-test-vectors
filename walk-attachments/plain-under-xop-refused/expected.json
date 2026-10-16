@@ -1,0 +1,7 @@
+{
+  "required": [],
+  "error": {
+    "kind": "mime",
+    "message": "mime: plain response not allowed by packaging mtom"
+  }
+}

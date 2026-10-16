@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><soap:Fault><faultcode>soap:Client</faultcode><faultstring>Unknown patient</faultstring><detail><PatientNotFound xmlns="urn:amantrue:demo:patient"><PatientId>nope</PatientId></PatientNotFound></detail></soap:Fault></soap:Body></soap:Envelope>

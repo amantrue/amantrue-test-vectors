@@ -1,0 +1,29 @@
+{
+  "evaluate_results": {
+    "Patient.@id": {
+      "op": "EQ",
+      "params": [
+        "p1"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 153,
+          "nil": false,
+          "src": 0,
+          "value": "p1"
+        }
+      ]
+    }
+  },
+  "payload_c14n_error": {
+    "kind": "input",
+    "message": "xml: namespace URI contains a tab or line break"
+  }
+}

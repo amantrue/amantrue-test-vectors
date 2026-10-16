@@ -1,0 +1,8 @@
+{
+  "required": [],
+  "error": {
+    "kind": "attachment",
+    "path": "Documents.Summary.Content",
+    "message": "attachment: Documents.Summary.Content is application/octet-stream, binding allows application/pdf"
+  }
+}

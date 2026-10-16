@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: leaf lacks extKeyUsage 1.3.6.1.5.5.7.3.4",
+  "ok": false
+}

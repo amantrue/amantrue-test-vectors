@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: element \"soap000000000\" is not closed"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: element \"soap000000000\" is not closed"
+  },
+  "hints": []
+}

@@ -1,0 +1,10 @@
+{
+  "When": {
+    "operation": {
+      "OP": "GTE",
+      "params": [
+        "2027"
+      ]
+    }
+  }
+}

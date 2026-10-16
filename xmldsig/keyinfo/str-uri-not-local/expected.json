@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: SecurityTokenReference URI \"cert\" is not a same-document #id",
+  "ok": false
+}

@@ -1,0 +1,12 @@
+{
+  "Patient.Seen": {
+    "operation": {
+      "OP": "RANGE",
+      "params": [
+        "1990-01-01",
+        "2000-01-01"
+      ],
+      "each": "ALL"
+    }
+  }
+}

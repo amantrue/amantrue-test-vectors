@@ -1,0 +1,11 @@
+{
+  "Patient.Seen": {
+    "operation": {
+      "OP": "GTE",
+      "params": [
+        "2008-01-01"
+      ],
+      "each": "ANY"
+    }
+  }
+}

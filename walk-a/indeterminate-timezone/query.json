@@ -1,0 +1,19 @@
+{
+  "GetPatientResult.BirthDate": {
+    "operation": {
+      "OP": "LT",
+      "params": [
+        "1995-07-10T00:00:00Z"
+      ]
+    }
+  },
+  "GetPatientResult.GivenNames.string": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "each": "ALL"
+    }
+  }
+}

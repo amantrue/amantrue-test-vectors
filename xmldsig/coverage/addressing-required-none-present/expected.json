@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: response has no WS-Addressing header",
+  "ok": false
+}

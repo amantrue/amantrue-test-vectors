@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: X509Data holds no X509Certificate or X509IssuerSerial",
+  "ok": false
+}

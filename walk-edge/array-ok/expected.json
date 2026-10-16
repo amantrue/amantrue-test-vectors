@@ -1,0 +1,96 @@
+{
+  "evaluate_error": {
+    "kind": "xsd",
+    "path": "Typed",
+    "message": "xsd: Typed occurs more than once"
+  },
+  "hints": [],
+  "payload_start": 0,
+  "rows": {
+    "Items.*": {
+      "items": [
+        {
+          "el": 164,
+          "nil": false,
+          "src": 0,
+          "value": "a"
+        },
+        {
+          "el": 178,
+          "nil": false,
+          "src": 0,
+          "value": "b"
+        }
+      ]
+    },
+    "Items.*.@a": {
+      "items": [
+        {
+          "el": 164,
+          "nil": false,
+          "src": 0,
+          "value": "1"
+        }
+      ]
+    },
+    "Items.*.@x:a": {
+      "items": [
+        {
+          "el": 178,
+          "nil": false,
+          "src": 0,
+          "value": "2"
+        }
+      ]
+    },
+    "Plain": {
+      "items": [
+        {
+          "el": 208,
+          "nil": false,
+          "src": 0,
+          "value": "p"
+        }
+      ]
+    },
+    "Star": {
+      "items": [
+        {
+          "el": 127,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 208,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 224,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 230,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Typed": {
+      "items": [
+        {
+          "el": 224,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 230,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:fiY1Mpy8GLwxmwhmCbvjRQY9/F41YwSdkRJcvr6FLEI=:"
+}

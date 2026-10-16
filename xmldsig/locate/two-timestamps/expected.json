@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: wsse:Security holds 2 wsu:Timestamp elements",
+  "ok": false
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "signed",
+  "algorithm": "rsa2048",
+  "chain": 1,
+  "signatures": 1,
+  "references": 1,
+  "distinct_canonicalizations": 1,
+  "cache": false,
+  "body_bytes": 16336,
+  "payload_bytes": 10169,
+  "binding_bytes": 4933,
+  "message_certs": 3
+}

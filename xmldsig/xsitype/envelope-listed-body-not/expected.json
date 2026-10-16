@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: coverage: xsi:type prefix \"t\" is not bound inside the signed content",
+  "ok": false
+}

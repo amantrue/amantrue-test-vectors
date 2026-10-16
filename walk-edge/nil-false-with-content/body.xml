@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><GetPatientResponse xmlns="urn:amantrue:demo:patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Patient id="p1"><DeceasedDate xsi:nil="false">x</DeceasedDate><Gender xsi:nil="false"><x/></Gender></Patient></GetPatientResponse></soap:Body></soap:Envelope>

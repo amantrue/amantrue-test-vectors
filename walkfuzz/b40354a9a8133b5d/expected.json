@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: undeclared namespace prefix \"A\""
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: undeclared namespace prefix \"A\""
+  },
+  "hints": []
+}

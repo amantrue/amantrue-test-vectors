@@ -1,0 +1,22 @@
+{
+  "evaluate_results": {
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "p",
+      "offset": 19722
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "R.name": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:7Utsj+kE1zyiQDCGbnYtuMdAC9UUSZYjiOAskA/9oKs=:"
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: SecurityTokenReference must hold exactly one reference",
+  "ok": false
+}

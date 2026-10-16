@@ -1,0 +1,97 @@
+{
+  "evaluate_error": {
+    "kind": "xsd",
+    "path": "R",
+    "message": "xsd: R occurs more than once"
+  },
+  "hints": [
+    {
+      "id": "t",
+      "offset": 323
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 323,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 323,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": []
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 340,
+          "nil": false,
+          "src": 0
+        },
+        {
+          "el": 340,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "items": [
+        {
+          "el": 340,
+          "nil": false,
+          "src": 0,
+          "value": "n"
+        },
+        {
+          "el": 340,
+          "nil": false,
+          "src": 0,
+          "value": "n"
+        }
+      ]
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:Kid30FLcVF2cTcfWVs/uOBS1qOn1M9Wln9lPaeSxvPM=:"
+}

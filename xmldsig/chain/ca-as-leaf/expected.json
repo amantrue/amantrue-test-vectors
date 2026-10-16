@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: leaf \"Signing CA\" is a CA certificate",
+  "ok": false
+}

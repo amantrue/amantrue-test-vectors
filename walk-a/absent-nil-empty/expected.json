@@ -1,0 +1,48 @@
+{
+  "evaluate_results": {
+    "Patient.Address": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Address.City": {
+      "op": "EQ",
+      "params": [
+        ""
+      ],
+      "output": true
+    },
+    "Patient.DeceasedDate": {
+      "op": "ABSENT_OR_NIL",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Address": {
+      "items": [
+        {
+          "el": 352,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Address.City": {
+      "items": [
+        {
+          "el": 361,
+          "nil": false,
+          "src": 0,
+          "value": ""
+        }
+      ]
+    },
+    "Patient.DeceasedDate": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:mmnhbLhnA5oEPOwB0iKHj9ewcSDz5/I7LpyAKRrzNTk=:"
+}

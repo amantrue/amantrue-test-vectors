@@ -1,0 +1,1 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><GetPatientResponse xmlns="urn:amantrue:demo:patient"><Patient id="p1"><Span>P1M</Span><Gap>P1M</Gap><On>2026-01-05</On></Patient></GetPatientResponse></soap:Body></soap:Envelope>

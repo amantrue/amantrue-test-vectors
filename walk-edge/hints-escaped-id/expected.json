@@ -1,0 +1,16 @@
+{
+  "document_error": {
+    "kind": "hint",
+    "message": "xml: hint for id \"x\\u{22}\\u{5C}\\u{E9}\" does not match an element"
+  },
+  "evaluate_error": {
+    "kind": "hint",
+    "message": "xml: hint for id \"x\\u{22}\\u{5C}\\u{E9}\" does not match an element"
+  },
+  "hints": [
+    {
+      "id": "x\"\\é",
+      "offset": 0
+    }
+  ]
+}

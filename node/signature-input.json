@@ -1,0 +1,114 @@
+[
+  {
+    "signature_input": "sig1=(\"@status\" \"content-type\" \"content-digest\" \"amantrue-data-source\" \"amantrue-session-id\" \"amantrue-collector-url\" \"amantrue-request-method\" \"amantrue-request-digest\" \"amantrue-request-auth\" \"amantrue-request-message-id\" \"@method\";req \"@target-uri\";req);created=1790942400;keyid=\"collector\";alg=\"ecdsa-p256-sha256\"",
+    "created": 1790942400
+  },
+  {
+    "signature_input": "sig1=(\"@status\" \"content-digest\";req);keyid=\"a;created=1\";created=1790000000;alg=\"ecdsa-p256-sha256\"",
+    "created": 1790000000
+  },
+  {
+    "signature_input": "sig1=();created=5, sig2=();created=6",
+    "created": 5
+  },
+  {
+    "signature_input": "  sig1=(\"@method\";req \"@target-uri\";req);created=7;tag=\"amantrue\";expires=9",
+    "created": 7
+  },
+  {
+    "signature_input": "sig1=();x=?1;y=:AAA=:;z=tok/en;created=8",
+    "created": 8
+  },
+  {
+    "signature_input": "sig0=();created=4,sig1=();created=5",
+    "created": 5
+  },
+  {
+    "signature_input": "sig1=();created=5\t,\t sig1=();created=6",
+    "created": 6
+  },
+  {
+    "signature_input": "sig1=();created=1;created=2",
+    "created": 2
+  },
+  {
+    "signature_input": "sig2=?1;a, sig1=:YWJj:;created=9",
+    "created": 9
+  },
+  {
+    "signature_input": "sig1=();created=0",
+    "created": 0
+  },
+  {
+    "signature_input": "sig1=();created=999999999999999",
+    "created": 999999999999999
+  },
+  {
+    "signature_input": "sig1=();keyid=\"a;created=1\"",
+    "error": "eval: Signature-Input has no created parameter"
+  },
+  {
+    "signature_input": "sig1=();created=-1",
+    "error": "eval: Signature-Input created is not a decimal integer"
+  },
+  {
+    "signature_input": "sig1=();created=\"1\"",
+    "error": "eval: Signature-Input created is not a decimal integer"
+  },
+  {
+    "signature_input": "sig1=();created=?1",
+    "error": "eval: Signature-Input created is not a decimal integer"
+  },
+  {
+    "signature_input": "sig1=();created",
+    "error": "eval: Signature-Input created is not a decimal integer"
+  },
+  {
+    "signature_input": "sig1=();created=1.5",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "sig1=(\"a\"\"b\");created=1",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "sig1=();created=1 junk",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "Sig1=();created=1",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "sig1=();created=1234567890123456",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "",
+    "error": "eval: Signature-Input has no created parameter"
+  },
+  {
+    "signature_input": "sig2=();created=1",
+    "error": "eval: Signature-Input has no sig1 member"
+  },
+  {
+    "signature_input": "sig1=();created=1,",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "sig1=:a*b:;created=1",
+    "error": "eval: Signature-Input is not a valid structured field dictionary member"
+  },
+  {
+    "signature_input": "sig1=();created=1, sig1=()",
+    "error": "eval: Signature-Input has no created parameter"
+  },
+  {
+    "signature_input": "sig1=(\"@status\";created=1)",
+    "error": "eval: Signature-Input has no created parameter"
+  },
+  {
+    "signature_input": "sig1=();created=01",
+    "created": 1
+  }
+]

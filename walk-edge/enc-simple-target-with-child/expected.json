@@ -1,0 +1,82 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "R.name",
+    "message": "xsd: R.name: element content where a simple value is expected"
+  },
+  "hints": [
+    {
+      "id": "n",
+      "offset": 349
+    },
+    {
+      "id": "t",
+      "offset": 304
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": []
+    },
+    "R": {
+      "items": [
+        {
+          "el": 304,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": []
+    },
+    "R.@a": {
+      "items": []
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 349,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": []
+    },
+    "R.name": {
+      "error": {
+        "kind": "lexical",
+        "path": "R.name",
+        "message": "xsd: R.name: element content where a simple value is expected"
+      }
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:umpyDIDpdZc5gjOEAyuQW6KlI+dR6WSNDQdstPYdi/k=:"
+}

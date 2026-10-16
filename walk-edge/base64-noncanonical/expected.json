@@ -1,0 +1,22 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "Patient.Photo",
+    "message": "xsd: Patient.Photo: \"AR==\" is not a valid base64Binary"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Photo": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": "AR=="
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:/zAqzPVVncx6jVGHt/3PV26yv72an2nzFDGB0vz1HtQ=:"
+}

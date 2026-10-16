@@ -1,0 +1,53 @@
+{
+  "evaluate_results": {
+    "Patient.@id": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Gender": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Patient.Name.Given": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.@id": {
+      "items": [
+        {
+          "el": 189,
+          "nil": false,
+          "src": 0,
+          "value": "p1"
+        }
+      ]
+    },
+    "Patient.Gender": {
+      "items": []
+    },
+    "Patient.Name.Given": {
+      "items": [
+        {
+          "el": 212,
+          "nil": false,
+          "src": 0,
+          "value": "Eboni"
+        },
+        {
+          "el": 232,
+          "nil": false,
+          "src": 0,
+          "value": " Ebony "
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:9Pr7/Sr6cl+VSIOc4bwIXu0qQej+QzCCBzvo/Guh1ik=:"
+}

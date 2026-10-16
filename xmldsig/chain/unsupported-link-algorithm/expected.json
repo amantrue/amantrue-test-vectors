@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate signature algorithm 1.2.840.113549.1.1.13 is not supported",
+  "ok": false
+}

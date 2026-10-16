@@ -1,0 +1,26 @@
+{
+  "evaluate_results": {
+    "Patient.Gender": {
+      "op": "EQ",
+      "params": [
+        "female"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 305,
+          "nil": false,
+          "src": 0,
+          "value": "female"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:r58GWakF1axopRsUp+FFFUO0OJ7BDs5nySFTUPm5dyE=:"
+}

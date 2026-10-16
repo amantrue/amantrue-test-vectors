@@ -1,0 +1,16 @@
+{
+  "Patient.@id": {
+    "operation": {
+      "OP": "SD",
+      "params": []
+    }
+  },
+  "Patient.Gender": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "female"
+      ]
+    }
+  }
+}

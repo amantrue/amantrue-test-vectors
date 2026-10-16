@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate \"Constrained Intermediate\" has an unsupported critical extension 2.5.29.30",
+  "ok": false
+}

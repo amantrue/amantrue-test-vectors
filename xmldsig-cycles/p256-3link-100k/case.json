@@ -1,0 +1,13 @@
+{
+  "kind": "signed",
+  "algorithm": "p256",
+  "chain": 4,
+  "signatures": 1,
+  "references": 3,
+  "distinct_canonicalizations": 3,
+  "cache": false,
+  "body_bytes": 107107,
+  "payload_bytes": 102319,
+  "binding_bytes": 4406,
+  "message_certs": 3
+}

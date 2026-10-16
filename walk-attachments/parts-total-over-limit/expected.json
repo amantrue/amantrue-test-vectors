@@ -1,0 +1,7 @@
+{
+  "required": [],
+  "error": {
+    "kind": "attachment",
+    "message": "attachment: parts total 69 bytes, limit 64"
+  }
+}

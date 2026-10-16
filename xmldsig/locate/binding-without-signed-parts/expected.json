@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: locate: binding has no valid signed_parts",
+  "ok": false
+}

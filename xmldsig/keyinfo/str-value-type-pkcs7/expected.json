@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: SecurityTokenReference ValueType \"http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#PKCS7\" is not X509v3",
+  "ok": false
+}

@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: certificate has a duplicate extension 2.5.29.19",
+  "ok": false
+}

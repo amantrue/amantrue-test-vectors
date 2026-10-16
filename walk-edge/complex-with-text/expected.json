@@ -1,0 +1,23 @@
+{
+  "evaluate_results": {
+    "Patient.Name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Name": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:J/qKloQCaqF0e420pA1pKTWncAoFwfeYGsSQQ7jLn1s=:"
+}

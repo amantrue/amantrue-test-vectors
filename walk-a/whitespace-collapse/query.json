@@ -1,0 +1,19 @@
+{
+  "Patient.BirthDate": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "1995-07-10"
+      ]
+    }
+  },
+  "Patient.Name.Given": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "Eboni"
+      ],
+      "each": "ANY"
+    }
+  }
+}

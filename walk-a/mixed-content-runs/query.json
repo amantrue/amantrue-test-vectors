@@ -1,0 +1,26 @@
+{
+  "#text": {
+    "operation": {
+      "OP": "COUNT_EQ",
+      "params": [
+        2
+      ]
+    }
+  },
+  "b": {
+    "operation": {
+      "OP": "COUNT_EQ",
+      "params": [
+        1
+      ]
+    }
+  },
+  "code": {
+    "operation": {
+      "OP": "EQ",
+      "params": [
+        "A1"
+      ]
+    }
+  }
+}

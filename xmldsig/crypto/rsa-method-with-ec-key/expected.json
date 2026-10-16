@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: signature: rsa-sha256 needs an RSA key",
+  "ok": false
+}

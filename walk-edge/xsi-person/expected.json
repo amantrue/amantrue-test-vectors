@@ -1,0 +1,60 @@
+{
+  "evaluate_results": {
+    "Patient.Party": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Party.~Organization.LegalName": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Patient.Party.~Person": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "Patient.Party.~Person.Name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.Party": {
+      "items": [
+        {
+          "el": 242,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Party.~Organization.LegalName": {
+      "items": []
+    },
+    "Patient.Party.~Person": {
+      "items": [
+        {
+          "el": 242,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "Patient.Party.~Person.Name": {
+      "items": [
+        {
+          "el": 269,
+          "nil": false,
+          "src": 0,
+          "value": "Ann"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:jls/XoYXhMehT5yx6YO5hphlNbgOTaLVk0CLZoa23JY=:"
+}

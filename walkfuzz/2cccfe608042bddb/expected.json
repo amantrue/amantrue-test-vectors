@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: element \"\\u{E7}\" is not closed"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: element \"\\u{E7}\" is not closed"
+  },
+  "hints": []
+}

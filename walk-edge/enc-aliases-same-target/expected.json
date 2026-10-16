@@ -1,0 +1,193 @@
+{
+  "evaluate_results": {
+    "": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "F.v": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "H.x": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Items": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Names": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.#text": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.@a": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.any": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.date": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "R.inner.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    },
+    "R.name": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Typed": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "hints": [
+    {
+      "id": "s",
+      "offset": 409
+    },
+    {
+      "id": "t",
+      "offset": 453
+    }
+  ],
+  "payload_start": 247,
+  "rows": {
+    "": {
+      "items": [
+        {
+          "el": 247,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "F.v": {
+      "items": []
+    },
+    "H.x": {
+      "items": []
+    },
+    "Items": {
+      "items": []
+    },
+    "Names": {
+      "items": [
+        {
+          "el": 409,
+          "nil": true,
+          "src": 0
+        },
+        {
+          "el": 409,
+          "nil": true,
+          "src": 0
+        },
+        {
+          "el": 409,
+          "nil": true,
+          "src": 0
+        },
+        {
+          "el": 409,
+          "nil": true,
+          "src": 0
+        },
+        {
+          "el": 409,
+          "nil": true,
+          "src": 0
+        }
+      ]
+    },
+    "R": {
+      "items": [
+        {
+          "el": 453,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.#text": {
+      "items": [
+        {
+          "el": 453,
+          "nil": false,
+          "src": 0,
+          "value": "T"
+        },
+        {
+          "el": 453,
+          "nil": false,
+          "src": 1,
+          "value": "U"
+        }
+      ]
+    },
+    "R.@a": {
+      "items": [
+        {
+          "el": 453,
+          "nil": false,
+          "src": 0,
+          "value": "A"
+        }
+      ]
+    },
+    "R.any": {
+      "items": [
+        {
+          "el": 477,
+          "nil": false,
+          "src": 0
+        }
+      ]
+    },
+    "R.date": {
+      "items": []
+    },
+    "R.inner.name": {
+      "items": [
+        {
+          "el": 484,
+          "nil": false,
+          "src": 0,
+          "value": "IN"
+        }
+      ]
+    },
+    "R.name": {
+      "items": []
+    },
+    "Typed": {
+      "items": []
+    }
+  },
+  "payload_c14n_digest": "sha-256=:8eg+rfsSe9mgA07J8+uaXEcNMSZdrcRn9cB/Yak3RKg=:"
+}

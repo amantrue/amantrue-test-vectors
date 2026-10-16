@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: \"Demo Root\" is not a CA",
+  "ok": false
+}

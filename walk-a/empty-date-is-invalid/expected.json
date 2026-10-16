@@ -1,0 +1,22 @@
+{
+  "evaluate_error": {
+    "kind": "lexical",
+    "path": "Patient.DeceasedDate",
+    "message": "xsd: Patient.DeceasedDate: \"\" is not a valid date"
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.DeceasedDate": {
+      "items": [
+        {
+          "el": 352,
+          "nil": false,
+          "src": 0,
+          "value": ""
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:oCHuWywEmIh5n69BaFcWyOUbUhBdjOzSuAS3nMIgqSA=:"
+}

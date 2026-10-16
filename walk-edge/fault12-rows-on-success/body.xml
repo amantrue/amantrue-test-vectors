@@ -1,0 +1,1 @@
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope"><env:Body><GetPatientResponse xmlns="urn:amantrue:demo:patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><Patient id="p1"><Name><Given>Eboni</Given><Given> Ebony </Given></Name><Gender>female</Gender><BirthDate> 1995-07-10 </BirthDate></Patient></GetPatientResponse></env:Body></env:Envelope>

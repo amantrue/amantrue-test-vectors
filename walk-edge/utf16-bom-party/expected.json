@@ -1,0 +1,41 @@
+{
+  "evaluate_results": {
+    "Party.~Person.Name": {
+      "op": "SD",
+      "params": [],
+      "output": "Ann"
+    },
+    "Patient.BirthDate": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Party.~Person.Name": {
+      "items": [
+        {
+          "el": 274,
+          "nil": false,
+          "src": 0,
+          "value": "Ann"
+        }
+      ]
+    },
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:DrX7jg7tIee0wH0OhfByARccU5hk57m2jBaySXd7cs8=:"
+}

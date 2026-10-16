@@ -1,0 +1,4 @@
+{
+  "error": "mime: unresolved cid missing@demo.example.org",
+  "ok": false
+}

@@ -1,0 +1,11 @@
+{
+  "document_error": {
+    "kind": "input",
+    "message": "xml: content type \"te\\u{E9}xt/xml\" is not XML"
+  },
+  "evaluate_error": {
+    "kind": "input",
+    "message": "xml: content type \"te\\u{E9}xt/xml\" is not XML"
+  },
+  "hints": []
+}

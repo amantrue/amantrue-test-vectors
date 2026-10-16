@@ -1,0 +1,28 @@
+{
+  "results": {
+    "Attachments.Report": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    }
+  },
+  "required": [],
+  "variants": [
+    {
+      "name": "root-tampered",
+      "tamper": "root",
+      "error": {
+        "kind": "mime",
+        "message": "mime: root part does not match the signed manifest"
+      }
+    },
+    {
+      "name": "extra-attachment",
+      "tamper": "extra",
+      "error": {
+        "kind": "mime",
+        "message": "mime: supplied attachment is not in the signed manifest extra@amantrue"
+      }
+    }
+  ]
+}

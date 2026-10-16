@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: anchor \"sha256:Pu4uESuDRyieB2Z3ml3tS1FSDdE6YnxhLcbHC1cztc0=\": certificate key is not RSA or P-256",
+  "ok": false
+}

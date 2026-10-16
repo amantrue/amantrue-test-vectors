@@ -1,0 +1,5 @@
+{
+  "collector_created": 1790942400,
+  "request_auth": "message=x509;signer=sha256:x;alg=rsa-sha256;digest=sha256, addressing=2005/08",
+  "request_message_id": "urn:uuid:6f1c2a9e-4a43-4c1b-9a51-2f0e9a3b7c10"
+}

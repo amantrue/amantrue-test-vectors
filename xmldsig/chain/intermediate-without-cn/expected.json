@@ -1,0 +1,4 @@
+{
+  "error": "xmldsig: chain: no issuer for \"\" leads to a pinned anchor",
+  "ok": false
+}

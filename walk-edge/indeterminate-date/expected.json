@@ -1,0 +1,27 @@
+{
+  "evaluate_results": {
+    "Patient.BirthDate": {
+      "op": "LT",
+      "params": [
+        "2000-01-01Z"
+      ],
+      "output": false,
+      "indeterminate": true
+    }
+  },
+  "hints": [],
+  "payload_start": 81,
+  "rows": {
+    "Patient.BirthDate": {
+      "items": [
+        {
+          "el": 206,
+          "nil": false,
+          "src": 0,
+          "value": "2000-01-01"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:SHveFtJp8H62/nHI2impg2pjnMHps1dUgX2+I3tRDfY=:"
+}

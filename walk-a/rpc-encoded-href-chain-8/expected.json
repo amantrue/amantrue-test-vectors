@@ -1,0 +1,63 @@
+{
+  "evaluate_results": {
+    "getPatientReturn.birthDate": {
+      "op": "LT",
+      "params": [
+        "2008-01-01"
+      ],
+      "output": true
+    }
+  },
+  "hints": [
+    {
+      "id": "c1",
+      "offset": 371
+    },
+    {
+      "id": "c2",
+      "offset": 401
+    },
+    {
+      "id": "c3",
+      "offset": 431
+    },
+    {
+      "id": "c4",
+      "offset": 461
+    },
+    {
+      "id": "c5",
+      "offset": 491
+    },
+    {
+      "id": "c6",
+      "offset": 521
+    },
+    {
+      "id": "c7",
+      "offset": 551
+    },
+    {
+      "id": "id0",
+      "offset": 582
+    },
+    {
+      "id": "id1",
+      "offset": 1061
+    }
+  ],
+  "payload_start": 189,
+  "rows": {
+    "getPatientReturn.birthDate": {
+      "items": [
+        {
+          "el": 997,
+          "nil": false,
+          "src": 0,
+          "value": "1995-07-10"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:4kyDxyGY88ccghjJXRPXuo/VAvtMXNIUNzTTlybU2F0=:"
+}

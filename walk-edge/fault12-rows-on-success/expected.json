@@ -1,0 +1,40 @@
+{
+  "evaluate_results": {
+    "Fault": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Fault.PatientNotFound.PatientId": {
+      "op": "EXISTS",
+      "params": [],
+      "output": false
+    },
+    "Patient.Gender": {
+      "op": "EXISTS",
+      "params": [],
+      "output": true
+    }
+  },
+  "hints": [],
+  "payload_start": 76,
+  "rows": {
+    "Fault": {
+      "items": []
+    },
+    "Fault.PatientNotFound.PatientId": {
+      "items": []
+    },
+    "Patient.Gender": {
+      "items": [
+        {
+          "el": 256,
+          "nil": false,
+          "src": 0,
+          "value": "female"
+        }
+      ]
+    }
+  },
+  "payload_c14n_digest": "sha-256=:ZeurJDImT3XcBVhrk/+IdD9Z6G+2Nj9lBsqiVeEcuss=:"
+}
