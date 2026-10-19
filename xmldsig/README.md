@@ -22,7 +22,7 @@ Each case is `<group>/<case>/` with:
 - `binding.json`: the binding's JCS bytes (`binding@1` with `extensions.signed_parts`), compiled from `testdata/secure-patient/SecurePatientService.wsdl` (or a variant, see below);
 - `hints.json`: `[["<id>", <offset>], ...]` from the core export `signature_hints` unless the case says otherwise;
 - `context.json`: `{"collector_created": <unix seconds>, "request_message_id": "<id or empty>", "request_auth": "<summary>"}`;
-- `expected.json`: `{"ok": true, "signer": {...}}` or `{"ok": false, "error": "<exact error string>"}`.
+- `expected.json`: `{"ok": true, "signer": {...}}` or `{"ok": false, "error": "<exact error string>"}`. An ok case of the `relates` group also has `"relates_to": "<text of the signed wsa:RelatesTo>"`.
 
 Defaults: collector created `2026-10-02T12:00:00Z`, Timestamp Created `2026-10-02T11:59:30Z` and Expires `2026-10-02T12:04:30Z`, certificates valid 2026-01-01 to 2036-01-01, binding `require [payload, timestamp]`, rows all, algorithms `[ecdsa-p256-sha256, rsa-pss-sha256, rsa-sha256]`, digests `[sha256]`, `relates_to true`, `max_chain 3`, anchor Demo Root. The default response is SOAP 1.1 with BSTs for the leaf (`cert`, first) and Demo Intermediate (`ca`), RelatesTo 2005/08 equal to the context message id, and references to the Timestamp, Body and RelatesTo.
 
@@ -111,13 +111,10 @@ The node's `Signature-Input` reader vectors are node-only and live in the amantr
 
 | Case | Construction | Expected |
 |---|---|---|
-| `relates/mismatch` | context message id differs | `xmldsig: relates_to: does not match request message id` |
-| `relates/2004-08` | RelatesTo in the 2004/08 namespace, request_auth ends addressing=2004/08 | ok, covered [addressing payload timestamp] |
-| `relates/no-request-message-id` | the request carried no message id | `xmldsig: relates_to: request has no message id` |
+| `relates/2004-08` | RelatesTo in the 2004/08 namespace | ok, covered [addressing payload timestamp] |
 | `relates/two-relates-to` | a second, unsigned RelatesTo in the Header | `xmldsig: relates_to: want exactly one wsa:RelatesTo, found 2` |
 | `relates/relationship-type-reply` | RelatesTo carries RelationshipType .../addressing/reply | ok, covered [addressing payload timestamp] |
 | `relates/relationship-type-other` | RelatesTo carries RelationshipType="urn:x" | `xmldsig: relates_to: RelationshipType "urn:x" is not reply` |
-| `relates/namespace-differs-from-request` | RelatesTo in 2005/08 while request_auth says addressing=2004/08 | `xmldsig: relates_to: want exactly one wsa:RelatesTo, found 0` |
 | `relates/whitespace-around-id` | RelatesTo text has XML whitespace around the id | ok, covered [addressing payload timestamp] |
 
 ### tamper

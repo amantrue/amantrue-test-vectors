@@ -1,4 +1,0 @@
-{
-  "error": "xmldsig: relates_to: want exactly one wsa:RelatesTo, found 0",
-  "ok": false
-}

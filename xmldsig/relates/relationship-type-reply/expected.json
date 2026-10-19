@@ -1,5 +1,6 @@
 {
   "ok": true,
+  "relates_to": "urn:uuid:6f1c2a9e-4a43-4c1b-9a51-2f0e9a3b7c10",
   "signer": {
     "anchor_fingerprint": "sha256:z17fsZiQPcLZ+1ft3rdWOIO7DG4tvVfgo89LYZrrF4E=",
     "covered": [
