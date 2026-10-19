@@ -1,6 +1,6 @@
 [
   {
-    "signature_input": "sig1=(\"@status\" \"content-type\" \"content-digest\" \"amantrue-data-source\" \"amantrue-session-id\" \"amantrue-collector-url\" \"amantrue-request-method\" \"amantrue-request-digest\" \"amantrue-request-auth\" \"amantrue-request-message-id\" \"@method\";req \"@target-uri\";req);created=1790942400;keyid=\"collector\";alg=\"ecdsa-p256-sha256\"",
+    "signature_input": "sig1=(\"@status\" \"content-type\" \"content-digest\" \"x-session-id\" \"amantrue-request-digest\" \"@method\";req \"@target-uri\";req);created=1790942400;keyid=\"collector\";alg=\"ecdsa-p256-sha256\"",
     "created": 1790942400
   },
   {

@@ -4,6 +4,5 @@ useDefault = true
 [allowlist]
 description = "Committed TEST keys for reproducible vectors. Not used outside tests."
 paths = [
-  '''(^|/)request-auth/vectors\.json$''',
   '''(^|/)proxy-profile/keys\.json$''',
 ]

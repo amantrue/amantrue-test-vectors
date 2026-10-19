@@ -31,8 +31,8 @@ generated. It comes from the public SMART Health IT sandbox
 (`https://r4.smarthealthit.org`). Other names (Eboni Ward, Mallory, Maria Ruiz,
 `GivenNNNNN`, `Consultation N`) are placeholders.
 
-All private keys in `request-auth/vectors.json` and `proxy-profile/keys.json`
-are fixed TEST keys. They were made for these vectors. They protect nothing.
+All private keys in `proxy-profile/keys.json` are fixed TEST keys. They were
+made for these vectors. They protect nothing.
 Do not use them for anything other than tests.
 
 All certificates come from test CAs named `Amantrue Demo` or `Profile Root`.
@@ -46,18 +46,22 @@ messages.
 The binding vectors hold compiled element structures of HL7 FHIR (CC0), NIEM
 (public domain) and the Apache Axis AddressBook sample (Apache-2.0).
 
-The file `.gitleaks.toml` allows the two files with test keys. A secret scan
+The file `.gitleaks.toml` allows the file with test keys. A secret scan
 of this repository finds nothing else.
 
 ## proxy-profile
 
 `proxy-profile/vectors.json` holds the shared test vectors of the proxy
-signature profile: 9 valid and 11 invalid cases, each with the request, the
+signature profile: 8 valid and 12 invalid cases, each with the request, the
 response headers and body, the `Signature-Input` and `Signature` headers, the
 signature base of each label, and, for an invalid case, a part of the
-expected error text. `proxy-profile/keys.json` holds the fixed TEST keys
-(ES256 PKCS#8 PEM, ML-DSA-65 seed) and their JWKs. Do not use these keys for
-anything other than tests.
+expected error text. The signature covers `@status`, `content-type`,
+`content-digest`, `x-session-id`, `amantrue-request-digest`, `@method;req`
+and `@target-uri;req`, and `amantrue-response-parts` for a multipart
+response. The SOAP cases carry synthetic WS-Security headers in the request
+body, as the node builds them. `proxy-profile/keys.json` holds the fixed TEST
+keys (ES256 PKCS#8 PEM, ML-DSA-65 seed) and their JWKs. Do not use these keys
+for anything other than tests.
 
 In amantrue-zk-node, `core/tests/proxy_profile_vectors.rs`,
 `core/tests/proxy_signed.rs` and `host/tests/guests_verify_signatures.rs`
