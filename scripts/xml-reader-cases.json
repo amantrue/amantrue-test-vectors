@@ -236,5 +236,8 @@
  {"case": "walk-edge-mixed-wrong-root", "source": "walk-edge/mixed-wrong-root", "expect": "accept", "body_file": "walk-edge/mixed-wrong-root/body.xml", "body_b64": null},
  {"case": "walk-edge-not-closed-weird-name", "source": "walk-edge/not-closed-weird-name", "expect": "refuse:structure", "body_file": "walk-edge/not-closed-weird-name/body.xml", "body_b64": null},
  {"case": "walk-edge-utf16-lone-surrogate", "source": "walk-edge/utf16-lone-surrogate", "expect": "refuse:encoding", "body_file": "walk-edge/utf16-lone-surrogate/body.xml", "body_b64": null},
- {"case": "walk-edge-whitespace-only", "source": "walk-edge/whitespace-only", "expect": "refuse:structure", "body_file": "walk-edge/whitespace-only/body.xml", "body_b64": null}
+ {"case": "walk-edge-whitespace-only", "source": "walk-edge/whitespace-only", "expect": "refuse:structure", "body_file": "walk-edge/whitespace-only/body.xml", "body_b64": null},
+ {"case": "name-table-start-u1f59-accept", "source": "name-table", "expect": "accept", "body_file": null, "body_b64": "POG9mS8+"},
+ {"case": "name-table-char-u0640-accept", "source": "name-table", "expect": "accept", "body_file": null, "body_b64": "PGHZgCBi14Q9IjEiLz4="},
+ {"case": "name-table-start-u00d7-refuse", "source": "name-table", "expect": "refuse:name", "body_file": null, "body_b64": "PMOXLz4="}
 ]
