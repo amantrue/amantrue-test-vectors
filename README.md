@@ -111,7 +111,7 @@ give the rule id of the case where it can.
 | `pi` | A processing instruction other than the XML declaration. |
 | `char` | A character or a character reference that is not in the XML 1.0 `Char` production. |
 | `name` | A name that is not valid in XML 1.0 4th edition, or a bad QName. |
-| `ns` | A namespace error. |
+| `ns` | A namespace error. This includes a prefixed attribute with the local name `xmlns` and an element name with the prefix `xml`. |
 | `dup-attr` | Two attributes with the same expanded name. |
 | `structure` | No root, more than one root, or text outside the root. |
 | `depth` | More than 64 nested elements. |

@@ -299,12 +299,16 @@ def parse_tree(raw):
         if len(attrs) + declared > MAX_ATTRS:
             raise Refuse("limits")
         ns, local, prefix = split(name)
+        if prefix == "xml":
+            raise Refuse("ns")
         for part in (local, prefix):
             if part and not is_ncname(part):
                 raise Refuse("name")
         items = []
         for key, value in attrs.items():
             ans, alocal, aprefix = split(key)
+            if aprefix and alocal == "xmlns":
+                raise Refuse("ns")
             for part in (alocal, aprefix):
                 if part and not is_ncname(part):
                     raise Refuse("name")
