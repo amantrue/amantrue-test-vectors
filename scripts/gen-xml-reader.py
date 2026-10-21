@@ -120,6 +120,7 @@ NAME_REST = (
 MAX_SIZE = 1048576
 MAX_DEPTH = 64
 MAX_ATTRS = 1024
+MAX_NS_SCOPE = 32
 SEP = "\x1f"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 RULES = ("size", "encoding", "decl", "doctype", "pi", "char", "name", "ns",
@@ -259,6 +260,8 @@ def parse_tree(raw):
         raise Refuse("char")
     check_decl(text, kind)
     state = {"depth": 0, "ns_decls": 0}
+    pending = []
+    scopes = [{}]
     stack = []
     result = []
 
@@ -283,6 +286,16 @@ def parse_tree(raw):
             raise Refuse("depth")
         declared = state["ns_decls"]
         state["ns_decls"] = 0
+        scope = dict(scopes[-1])
+        for decl_prefix, decl_uri in pending:
+            if decl_uri:
+                scope[decl_prefix or ""] = decl_uri
+            else:
+                scope.pop(decl_prefix or "", None)
+        del pending[:]
+        if len(scope) > MAX_NS_SCOPE:
+            raise Refuse("limits")
+        scopes.append(scope)
         if len(attrs) + declared > MAX_ATTRS:
             raise Refuse("limits")
         ns, local, prefix = split(name)
@@ -309,6 +322,7 @@ def parse_tree(raw):
     def on_end(name):
         flush()
         stack.pop()
+        scopes.pop()
         state["depth"] -= 1
 
     def on_chars(data):
@@ -317,6 +331,7 @@ def parse_tree(raw):
 
     def on_ns(prefix, uri):
         state["ns_decls"] += 1
+        pending.append((prefix, uri))
         if prefix is not None and not is_ncname(prefix):
             raise Refuse("name")
 

@@ -115,7 +115,7 @@ give the rule id of the case where it can.
 | `dup-attr` | Two attributes with the same expanded name. |
 | `structure` | No root, more than one root, or text outside the root. |
 | `depth` | More than 64 nested elements. |
-| `limits` | More than 1,024 attributes on one element, `xmlns` declarations included. |
+| `limits` | More than 1,024 attributes on one element, `xmlns` declarations included. Also more than 32 distinct namespace bindings in scope at one element (rule 13; the default namespace counts when it has a URI, the `xml` binding does not, a redeclared prefix counts once). |
 | `syntax` | Any other well-formedness error. |
 
 The rules are in the plain XML design, section 5.
