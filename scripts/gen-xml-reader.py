@@ -119,10 +119,11 @@ NAME_REST = (
 
 MAX_SIZE = 1048576
 MAX_DEPTH = 64
+MAX_ATTRS = 1024
 SEP = "\x1f"
 XML_NS = "http://www.w3.org/XML/1998/namespace"
 RULES = ("size", "encoding", "decl", "doctype", "pi", "char", "name", "ns",
-         "dup-attr", "structure", "depth", "syntax")
+         "dup-attr", "structure", "depth", "limits", "syntax")
 
 CHAR_BAD = re.compile("[^\t\n\r -퟿-�\U00010000-\U0010ffff]")
 DECL_START = re.compile(r"<\?xml(?=[ \t\r\n?])")
@@ -257,7 +258,7 @@ def parse_tree(raw):
     if bad:
         raise Refuse("char")
     check_decl(text, kind)
-    state = {"depth": 0}
+    state = {"depth": 0, "ns_decls": 0}
     stack = []
     result = []
 
@@ -280,6 +281,10 @@ def parse_tree(raw):
     def on_start(name, attrs):
         if state["depth"] >= MAX_DEPTH:
             raise Refuse("depth")
+        declared = state["ns_decls"]
+        state["ns_decls"] = 0
+        if len(attrs) + declared > MAX_ATTRS:
+            raise Refuse("limits")
         ns, local, prefix = split(name)
         for part in (local, prefix):
             if part and not is_ncname(part):
@@ -311,6 +316,7 @@ def parse_tree(raw):
             stack[-1]["buffer"].append(data)
 
     def on_ns(prefix, uri):
+        state["ns_decls"] += 1
         if prefix is not None and not is_ncname(prefix):
             raise Refuse("name")
 

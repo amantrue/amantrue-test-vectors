@@ -115,6 +115,7 @@ give the rule id of the case where it can.
 | `dup-attr` | Two attributes with the same expanded name. |
 | `structure` | No root, more than one root, or text outside the root. |
 | `depth` | More than 64 nested elements. |
+| `limits` | More than 1,024 attributes on one element, `xmlns` declarations included. |
 | `syntax` | Any other well-formedness error. |
 
 The rules are in the plain XML design, section 5.
@@ -129,6 +130,7 @@ The file `scripts/xml-reader-cases.json` lists the cases. Each entry has
 | --- | --- | --- |
 | `edge` | 66 | Edge cases from the spike. |
 | `w3c:<ID>` | 123 | W3C XML Conformance Suite tests (`valid`, `invalid` and `not-wf`) with no DOCTYPE and no processing instruction. |
+| `name-table`, `limits` | 6 | Cases for the Go name tables and for the limit of 1,024 attributes. |
 | `walk-a/<dir>`, `walk-edge/<dir>` | 49 | The bodies of the `walk-a` and `walk-edge` corpora whose root is not a SOAP envelope. |
 
 Where the W3C suite and the rules disagree, the rules win. The three
