@@ -1,0 +1,18 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "http://example.org/namespace",
+  "name": "foo",
+  "attrs": [],
+  "content": [
+   "\n ",
+   {
+    "ns": "",
+    "name": "foo",
+    "attrs": [],
+    "content": []
+   },
+   "\n"
+  ]
+ }
+}

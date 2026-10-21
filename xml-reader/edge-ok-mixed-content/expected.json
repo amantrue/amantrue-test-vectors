@@ -1,0 +1,25 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "",
+  "name": "a",
+  "attrs": [],
+  "content": [
+   "x",
+   {
+    "ns": "",
+    "name": "b",
+    "attrs": [],
+    "content": []
+   },
+   "y",
+   {
+    "ns": "",
+    "name": "c",
+    "attrs": [],
+    "content": []
+   },
+   "z"
+  ]
+ }
+}

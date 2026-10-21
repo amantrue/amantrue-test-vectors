@@ -1,0 +1,71 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:x",
+  "name": "R",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "urn:x",
+    "name": "Items",
+    "attrs": [
+     [
+      "http://schemas.xmlsoap.org/soap/encoding/",
+      "arrayType",
+      "xsd:string[2]"
+     ]
+    ],
+    "content": [
+     {
+      "ns": "",
+      "name": "i",
+      "attrs": [
+       [
+        "http://schemas.xmlsoap.org/soap/encoding/",
+        "position",
+        "[0]"
+       ]
+      ],
+      "content": [
+       "a"
+      ]
+     },
+     {
+      "ns": "",
+      "name": "i",
+      "attrs": [],
+      "content": [
+       "b"
+      ]
+     }
+    ]
+   },
+   {
+    "ns": "",
+    "name": "Plain",
+    "attrs": [],
+    "content": [
+     "p"
+    ]
+   },
+   {
+    "ns": "urn:x",
+    "name": "T",
+    "attrs": [],
+    "content": []
+   },
+   {
+    "ns": "urn:x",
+    "name": "T",
+    "attrs": [
+     [
+      "http://www.w3.org/2001/XMLSchema-instance",
+      "type",
+      "x:A"
+     ]
+    ],
+    "content": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:v",
+  "name": "Record",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "urn:v",
+    "name": "Codes",
+    "attrs": [],
+    "content": [
+     " ABC  DEF "
+    ]
+   },
+   {
+    "ns": "urn:v",
+    "name": "When",
+    "attrs": [],
+    "content": [
+     "2026"
+    ]
+   },
+   {
+    "ns": "urn:v",
+    "name": "Score",
+    "attrs": [],
+    "content": [
+     "10.50"
+    ]
+   },
+   {
+    "ns": "urn:v",
+    "name": "Photo",
+    "attrs": [],
+    "content": [
+     "aGVsbG8="
+    ]
+   },
+   {
+    "ns": "urn:v",
+    "name": "Checksum",
+    "attrs": [],
+    "content": [
+     "0FA0"
+    ]
+   },
+   {
+    "ns": "urn:v",
+    "name": "Tags",
+    "attrs": [],
+    "content": [
+     "a b c"
+    ]
+   }
+  ]
+ }
+}

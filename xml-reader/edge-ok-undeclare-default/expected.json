@@ -1,0 +1,16 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:x",
+  "name": "a",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "",
+    "name": "b",
+    "attrs": [],
+    "content": []
+   }
+  ]
+ }
+}

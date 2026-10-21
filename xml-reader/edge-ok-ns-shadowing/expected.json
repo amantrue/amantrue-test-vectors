@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:1",
+  "name": "a",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "urn:2",
+    "name": "b",
+    "attrs": [],
+    "content": []
+   },
+   {
+    "ns": "urn:1",
+    "name": "c",
+    "attrs": [],
+    "content": []
+   }
+  ]
+ }
+}

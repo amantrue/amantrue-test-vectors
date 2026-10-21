@@ -1,0 +1,33 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:money",
+  "name": "Invoice",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "urn:money",
+    "name": "Amount",
+    "attrs": [
+     [
+      "",
+      "currency",
+      "USD"
+     ]
+    ],
+    "content": [
+     " 12.50 ",
+     {
+      "ns": "urn:money",
+      "name": "Note",
+      "attrs": [],
+      "content": [
+       "ignored"
+      ]
+     },
+     "\n"
+    ]
+   }
+  ]
+ }
+}
