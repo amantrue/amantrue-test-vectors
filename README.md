@@ -115,23 +115,36 @@ give the rule id of the case where it can.
 | `dup-attr` | Two attributes with the same expanded name. |
 | `structure` | No root, more than one root, or text outside the root. |
 | `depth` | More than 64 nested elements. |
-| `limits` | More than 1,024 attributes on one element, `xmlns` declarations included. Also more than 32 distinct namespace bindings in scope at one element (rule 13; the default namespace counts when it has a URI, the `xml` binding does not, a redeclared prefix counts once). |
+| `limits` | More than 1,024 attributes on one element, `xmlns` declarations included. Also more than 32 distinct namespace bindings in scope at one element. The default namespace counts when it has a non-empty URI, and `xmlns=""` removes it. The implicit `xml` binding does not count; an explicit `xmlns:xml` declaration counts as one binding. A redeclared prefix counts once. |
 | `syntax` | Any other well-formedness error. |
 
-The rules are in the plain XML design, section 5.
+### Output tree rules
+
+- In an attribute value, a literal TAB, LF or CR becomes a space. A character
+  from a character reference stays as it is.
+- Line ends are normalized before parsing: CR LF and a lone CR become LF. A
+  character reference `&#13;` stays CR.
+- CDATA joins the text next to it into one text run. A comment does not split
+  a text run.
+- Only one BOM is removed. A second BOM is text outside the root, and the
+  reader refuses it with `structure`.
 
 ### Cases
 
 The file `scripts/xml-reader-cases.json` lists the cases. Each entry has
 `case` (the folder name), `source`, `expect` (`accept` or `refuse:<id>`),
-`body_file` and `body_b64`. An entry has one of the two body fields.
+`body_file` and `body_b64`. Every entry has the two body keys. One of them
+holds the body and the other is `null`.
 
 | Source | Count | Description |
 | --- | --- | --- |
 | `edge` | 66 | Edge cases from the spike. |
 | `w3c:<ID>` | 123 | W3C XML Conformance Suite tests (`valid`, `invalid` and `not-wf`) with no DOCTYPE and no processing instruction. |
-| `name-table`, `limits` | 6 | Cases for the Go name tables and for the limit of 1,024 attributes. |
+| `name-table`, `limits` | 14 | Cases for the Go name tables, for the limit of 1,024 attributes and for the limit of 32 namespace bindings. |
+| `rule-8-11` | 12 | Cases for line ends, character references, BOMs and reserved namespace names. |
 | `walk-a/<dir>`, `walk-edge/<dir>` | 49 | The bodies of the `walk-a` and `walk-edge` corpora whose root is not a SOAP envelope. |
+
+The corpus has 264 cases.
 
 Where the W3C suite and the rules disagree, the rules win. The three
 `x-rmt5-*` cases (names that only the 5th edition allows) are refused with
@@ -139,8 +152,9 @@ Where the W3C suite and the rules disagree, the rules win. The three
 
 ### How to make the corpus again
 
-Python 3 and the standard library are enough. Run this command in the root of
-this repository:
+Python 3 and the standard library are enough. The committed corpus was made
+with Python 3.14.5 and expat 2.7.4. Run this command in the root of this
+repository:
 
 ```
 python3 -I scripts/gen-xml-reader.py

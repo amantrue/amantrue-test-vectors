@@ -419,7 +419,7 @@ def main():
         return 1
     os.makedirs(OUT_DIR, exist_ok=True)
     for stale in os.listdir(OUT_DIR):
-        if stale not in names:
+        if stale not in names and os.path.isdir(os.path.join(OUT_DIR, stale)):
             shutil.rmtree(os.path.join(OUT_DIR, stale))
     for name, raw, result in outputs:
         folder = os.path.join(OUT_DIR, name)
