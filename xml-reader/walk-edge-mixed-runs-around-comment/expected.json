@@ -1,0 +1,18 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:note",
+  "name": "Note",
+  "attrs": [],
+  "content": [
+   " ab ",
+   {
+    "ns": "urn:note",
+    "name": "b",
+    "attrs": [],
+    "content": []
+   },
+   " c"
+  ]
+ }
+}

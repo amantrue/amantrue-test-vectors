@@ -1,0 +1,34 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "urn:note",
+  "name": "Note",
+  "attrs": [
+   [
+    "",
+    "lang",
+    "en"
+   ]
+  ],
+  "content": [
+   "Hello ",
+   {
+    "ns": "urn:note",
+    "name": "b",
+    "attrs": [],
+    "content": [
+     "big"
+    ]
+   },
+   " world ",
+   {
+    "ns": "urn:note",
+    "name": "code",
+    "attrs": [],
+    "content": [
+     " A1 "
+    ]
+   }
+  ]
+ }
+}

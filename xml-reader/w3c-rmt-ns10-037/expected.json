@@ -1,0 +1,29 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "",
+  "name": "foo",
+  "attrs": [],
+  "content": [
+   "\n\n",
+   {
+    "ns": "",
+    "name": "bar",
+    "attrs": [
+     [
+      "http://example.org/~kipper",
+      "attr",
+      "2"
+     ],
+     [
+      "http://example.org/~wilbur",
+      "attr",
+      "1"
+     ]
+    ],
+    "content": []
+   },
+   "\n\n"
+  ]
+ }
+}

@@ -1,0 +1,437 @@
+import base64
+import json
+import os
+import re
+import shutil
+import sys
+from xml.parsers import expat
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CASES_FILE = os.path.join(ROOT, "scripts", "xml-reader-cases.json")
+OUT_DIR = os.path.join(ROOT, "xml-reader")
+
+NAME_START = (
+    (0x3A, 0x3A), (0x41, 0x5A), (0x5F, 0x5F), (0x61, 0x7A), (0xC0, 0xD6),
+    (0xD8, 0xF6), (0xF8, 0x131), (0x134, 0x13E), (0x141, 0x148), (0x14A, 0x17E),
+    (0x180, 0x1C3), (0x1CD, 0x1F0), (0x1F4, 0x1F5), (0x1FA, 0x217), (0x250, 0x2A8),
+    (0x2BB, 0x2C1), (0x386, 0x386), (0x388, 0x38A), (0x38C, 0x38C), (0x38E, 0x3A1),
+    (0x3A3, 0x3CE), (0x3D0, 0x3D6), (0x3DA, 0x3DA), (0x3DC, 0x3DC), (0x3DE, 0x3DE),
+    (0x3E0, 0x3E0), (0x3E2, 0x3F3), (0x401, 0x40C), (0x40E, 0x44F), (0x451, 0x45C),
+    (0x45E, 0x481), (0x490, 0x4C4), (0x4C7, 0x4C8), (0x4CB, 0x4CC), (0x4D0, 0x4EB),
+    (0x4EE, 0x4F5), (0x4F8, 0x4F9), (0x531, 0x556), (0x559, 0x559), (0x561, 0x586),
+    (0x5D0, 0x5EA), (0x5F0, 0x5F2), (0x621, 0x63A), (0x641, 0x64A), (0x671, 0x6B7),
+    (0x6BA, 0x6BE), (0x6C0, 0x6CE), (0x6D0, 0x6D3), (0x6D5, 0x6D5), (0x6E5, 0x6E6),
+    (0x905, 0x939), (0x93D, 0x93D), (0x958, 0x961), (0x985, 0x98C), (0x98F, 0x990),
+    (0x993, 0x9A8), (0x9AA, 0x9B0), (0x9B2, 0x9B2), (0x9B6, 0x9B9), (0x9DC, 0x9DD),
+    (0x9DF, 0x9E1), (0x9F0, 0x9F1), (0xA05, 0xA0A), (0xA0F, 0xA10), (0xA13, 0xA28),
+    (0xA2A, 0xA30), (0xA32, 0xA33), (0xA35, 0xA36), (0xA38, 0xA39), (0xA59, 0xA5C),
+    (0xA5E, 0xA5E), (0xA72, 0xA74), (0xA85, 0xA8B), (0xA8D, 0xA8D), (0xA8F, 0xA91),
+    (0xA93, 0xAA8), (0xAAA, 0xAB0), (0xAB2, 0xAB3), (0xAB5, 0xAB9), (0xABD, 0xABD),
+    (0xAE0, 0xAE0), (0xB05, 0xB0C), (0xB0F, 0xB10), (0xB13, 0xB28), (0xB2A, 0xB30),
+    (0xB32, 0xB33), (0xB36, 0xB39), (0xB3D, 0xB3D), (0xB5C, 0xB5D), (0xB5F, 0xB61),
+    (0xB85, 0xB8A), (0xB8E, 0xB90), (0xB92, 0xB95), (0xB99, 0xB9A), (0xB9C, 0xB9C),
+    (0xB9E, 0xB9F), (0xBA3, 0xBA4), (0xBA8, 0xBAA), (0xBAE, 0xBB5), (0xBB7, 0xBB9),
+    (0xC05, 0xC0C), (0xC0E, 0xC10), (0xC12, 0xC28), (0xC2A, 0xC33), (0xC35, 0xC39),
+    (0xC60, 0xC61), (0xC85, 0xC8C), (0xC8E, 0xC90), (0xC92, 0xCA8), (0xCAA, 0xCB3),
+    (0xCB5, 0xCB9), (0xCDE, 0xCDE), (0xCE0, 0xCE1), (0xD05, 0xD0C), (0xD0E, 0xD10),
+    (0xD12, 0xD28), (0xD2A, 0xD39), (0xD60, 0xD61), (0xE01, 0xE2E), (0xE30, 0xE30),
+    (0xE32, 0xE33), (0xE40, 0xE45), (0xE81, 0xE82), (0xE84, 0xE84), (0xE87, 0xE88),
+    (0xE8A, 0xE8A), (0xE8D, 0xE8D), (0xE94, 0xE97), (0xE99, 0xE9F), (0xEA1, 0xEA3),
+    (0xEA5, 0xEA5), (0xEA7, 0xEA7), (0xEAA, 0xEAB), (0xEAD, 0xEAE), (0xEB0, 0xEB0),
+    (0xEB2, 0xEB3), (0xEBD, 0xEBD), (0xEC0, 0xEC4), (0xF40, 0xF47), (0xF49, 0xF69),
+    (0x10A0, 0x10C5), (0x10D0, 0x10F6), (0x1100, 0x1100), (0x1102, 0x1103), (0x1105, 0x1107),
+    (0x1109, 0x1109), (0x110B, 0x110C), (0x110E, 0x1112), (0x113C, 0x113C), (0x113E, 0x113E),
+    (0x1140, 0x1140), (0x114C, 0x114C), (0x114E, 0x114E), (0x1150, 0x1150), (0x1154, 0x1155),
+    (0x1159, 0x1159), (0x115F, 0x1161), (0x1163, 0x1163), (0x1165, 0x1165), (0x1167, 0x1167),
+    (0x1169, 0x1169), (0x116D, 0x116E), (0x1172, 0x1173), (0x1175, 0x1175), (0x119E, 0x119E),
+    (0x11A8, 0x11A8), (0x11AB, 0x11AB), (0x11AE, 0x11AF), (0x11B7, 0x11B8), (0x11BA, 0x11BA),
+    (0x11BC, 0x11C2), (0x11EB, 0x11EB), (0x11F0, 0x11F0), (0x11F9, 0x11F9), (0x1E00, 0x1E9B),
+    (0x1EA0, 0x1EF9), (0x1F00, 0x1F15), (0x1F18, 0x1F1D), (0x1F20, 0x1F45), (0x1F48, 0x1F4D),
+    (0x1F50, 0x1F57), (0x1F59, 0x1F59), (0x1F5B, 0x1F5B), (0x1F5D, 0x1F5D), (0x1F5F, 0x1F7D),
+    (0x1F80, 0x1FB4), (0x1FB6, 0x1FBC), (0x1FBE, 0x1FBE), (0x1FC2, 0x1FC4), (0x1FC6, 0x1FCC),
+    (0x1FD0, 0x1FD3), (0x1FD6, 0x1FDB), (0x1FE0, 0x1FEC), (0x1FF2, 0x1FF4), (0x1FF6, 0x1FFC),
+    (0x2126, 0x2126), (0x212A, 0x212B), (0x212E, 0x212E), (0x2180, 0x2182), (0x3007, 0x3007),
+    (0x3021, 0x3029), (0x3041, 0x3094), (0x30A1, 0x30FA), (0x3105, 0x312C), (0x4E00, 0x9FA5),
+    (0xAC00, 0xD7A3),
+)
+
+NAME_REST = (
+    (0x2D, 0x2E), (0x30, 0x3A), (0x41, 0x5A), (0x5F, 0x5F), (0x61, 0x7A),
+    (0xB7, 0xB7), (0xC0, 0xD6), (0xD8, 0xF6), (0xF8, 0x131), (0x134, 0x13E),
+    (0x141, 0x148), (0x14A, 0x17E), (0x180, 0x1C3), (0x1CD, 0x1F0), (0x1F4, 0x1F5),
+    (0x1FA, 0x217), (0x250, 0x2A8), (0x2BB, 0x2C1), (0x2D0, 0x2D1), (0x300, 0x345),
+    (0x360, 0x361), (0x386, 0x38A), (0x38C, 0x38C), (0x38E, 0x3A1), (0x3A3, 0x3CE),
+    (0x3D0, 0x3D6), (0x3DA, 0x3DA), (0x3DC, 0x3DC), (0x3DE, 0x3DE), (0x3E0, 0x3E0),
+    (0x3E2, 0x3F3), (0x401, 0x40C), (0x40E, 0x44F), (0x451, 0x45C), (0x45E, 0x481),
+    (0x483, 0x486), (0x490, 0x4C4), (0x4C7, 0x4C8), (0x4CB, 0x4CC), (0x4D0, 0x4EB),
+    (0x4EE, 0x4F5), (0x4F8, 0x4F9), (0x531, 0x556), (0x559, 0x559), (0x561, 0x586),
+    (0x591, 0x5A1), (0x5A3, 0x5B9), (0x5BB, 0x5BD), (0x5BF, 0x5BF), (0x5C1, 0x5C2),
+    (0x5C4, 0x5C4), (0x5D0, 0x5EA), (0x5F0, 0x5F2), (0x621, 0x63A), (0x640, 0x652),
+    (0x660, 0x669), (0x670, 0x6B7), (0x6BA, 0x6BE), (0x6C0, 0x6CE), (0x6D0, 0x6D3),
+    (0x6D5, 0x6E8), (0x6EA, 0x6ED), (0x6F0, 0x6F9), (0x901, 0x903), (0x905, 0x939),
+    (0x93C, 0x94D), (0x951, 0x954), (0x958, 0x963), (0x966, 0x96F), (0x981, 0x983),
+    (0x985, 0x98C), (0x98F, 0x990), (0x993, 0x9A8), (0x9AA, 0x9B0), (0x9B2, 0x9B2),
+    (0x9B6, 0x9B9), (0x9BC, 0x9BC), (0x9BE, 0x9C4), (0x9C7, 0x9C8), (0x9CB, 0x9CD),
+    (0x9D7, 0x9D7), (0x9DC, 0x9DD), (0x9DF, 0x9E3), (0x9E6, 0x9F1), (0xA02, 0xA02),
+    (0xA05, 0xA0A), (0xA0F, 0xA10), (0xA13, 0xA28), (0xA2A, 0xA30), (0xA32, 0xA33),
+    (0xA35, 0xA36), (0xA38, 0xA39), (0xA3C, 0xA3C), (0xA3E, 0xA42), (0xA47, 0xA48),
+    (0xA4B, 0xA4D), (0xA59, 0xA5C), (0xA5E, 0xA5E), (0xA66, 0xA74), (0xA81, 0xA83),
+    (0xA85, 0xA8B), (0xA8D, 0xA8D), (0xA8F, 0xA91), (0xA93, 0xAA8), (0xAAA, 0xAB0),
+    (0xAB2, 0xAB3), (0xAB5, 0xAB9), (0xABC, 0xAC5), (0xAC7, 0xAC9), (0xACB, 0xACD),
+    (0xAE0, 0xAE0), (0xAE6, 0xAEF), (0xB01, 0xB03), (0xB05, 0xB0C), (0xB0F, 0xB10),
+    (0xB13, 0xB28), (0xB2A, 0xB30), (0xB32, 0xB33), (0xB36, 0xB39), (0xB3C, 0xB43),
+    (0xB47, 0xB48), (0xB4B, 0xB4D), (0xB56, 0xB57), (0xB5C, 0xB5D), (0xB5F, 0xB61),
+    (0xB66, 0xB6F), (0xB82, 0xB83), (0xB85, 0xB8A), (0xB8E, 0xB90), (0xB92, 0xB95),
+    (0xB99, 0xB9A), (0xB9C, 0xB9C), (0xB9E, 0xB9F), (0xBA3, 0xBA4), (0xBA8, 0xBAA),
+    (0xBAE, 0xBB5), (0xBB7, 0xBB9), (0xBBE, 0xBC2), (0xBC6, 0xBC8), (0xBCA, 0xBCD),
+    (0xBD7, 0xBD7), (0xBE7, 0xBEF), (0xC01, 0xC03), (0xC05, 0xC0C), (0xC0E, 0xC10),
+    (0xC12, 0xC28), (0xC2A, 0xC33), (0xC35, 0xC39), (0xC3E, 0xC44), (0xC46, 0xC48),
+    (0xC4A, 0xC4D), (0xC55, 0xC56), (0xC60, 0xC61), (0xC66, 0xC6F), (0xC82, 0xC83),
+    (0xC85, 0xC8C), (0xC8E, 0xC90), (0xC92, 0xCA8), (0xCAA, 0xCB3), (0xCB5, 0xCB9),
+    (0xCBE, 0xCC4), (0xCC6, 0xCC8), (0xCCA, 0xCCD), (0xCD5, 0xCD6), (0xCDE, 0xCDE),
+    (0xCE0, 0xCE1), (0xCE6, 0xCEF), (0xD02, 0xD03), (0xD05, 0xD0C), (0xD0E, 0xD10),
+    (0xD12, 0xD28), (0xD2A, 0xD39), (0xD3E, 0xD43), (0xD46, 0xD48), (0xD4A, 0xD4D),
+    (0xD57, 0xD57), (0xD60, 0xD61), (0xD66, 0xD6F), (0xE01, 0xE2E), (0xE30, 0xE3A),
+    (0xE40, 0xE4E), (0xE50, 0xE59), (0xE81, 0xE82), (0xE84, 0xE84), (0xE87, 0xE88),
+    (0xE8A, 0xE8A), (0xE8D, 0xE8D), (0xE94, 0xE97), (0xE99, 0xE9F), (0xEA1, 0xEA3),
+    (0xEA5, 0xEA5), (0xEA7, 0xEA7), (0xEAA, 0xEAB), (0xEAD, 0xEAE), (0xEB0, 0xEB9),
+    (0xEBB, 0xEBD), (0xEC0, 0xEC4), (0xEC6, 0xEC6), (0xEC8, 0xECD), (0xED0, 0xED9),
+    (0xF18, 0xF19), (0xF20, 0xF29), (0xF35, 0xF35), (0xF37, 0xF37), (0xF39, 0xF39),
+    (0xF3E, 0xF47), (0xF49, 0xF69), (0xF71, 0xF84), (0xF86, 0xF8B), (0xF90, 0xF95),
+    (0xF97, 0xF97), (0xF99, 0xFAD), (0xFB1, 0xFB7), (0xFB9, 0xFB9), (0x10A0, 0x10C5),
+    (0x10D0, 0x10F6), (0x1100, 0x1100), (0x1102, 0x1103), (0x1105, 0x1107), (0x1109, 0x1109),
+    (0x110B, 0x110C), (0x110E, 0x1112), (0x113C, 0x113C), (0x113E, 0x113E), (0x1140, 0x1140),
+    (0x114C, 0x114C), (0x114E, 0x114E), (0x1150, 0x1150), (0x1154, 0x1155), (0x1159, 0x1159),
+    (0x115F, 0x1161), (0x1163, 0x1163), (0x1165, 0x1165), (0x1167, 0x1167), (0x1169, 0x1169),
+    (0x116D, 0x116E), (0x1172, 0x1173), (0x1175, 0x1175), (0x119E, 0x119E), (0x11A8, 0x11A8),
+    (0x11AB, 0x11AB), (0x11AE, 0x11AF), (0x11B7, 0x11B8), (0x11BA, 0x11BA), (0x11BC, 0x11C2),
+    (0x11EB, 0x11EB), (0x11F0, 0x11F0), (0x11F9, 0x11F9), (0x1E00, 0x1E9B), (0x1EA0, 0x1EF9),
+    (0x1F00, 0x1F15), (0x1F18, 0x1F1D), (0x1F20, 0x1F45), (0x1F48, 0x1F4D), (0x1F50, 0x1F57),
+    (0x1F59, 0x1F59), (0x1F5B, 0x1F5B), (0x1F5D, 0x1F5D), (0x1F5F, 0x1F7D), (0x1F80, 0x1FB4),
+    (0x1FB6, 0x1FBC), (0x1FBE, 0x1FBE), (0x1FC2, 0x1FC4), (0x1FC6, 0x1FCC), (0x1FD0, 0x1FD3),
+    (0x1FD6, 0x1FDB), (0x1FE0, 0x1FEC), (0x1FF2, 0x1FF4), (0x1FF6, 0x1FFC), (0x20D0, 0x20DC),
+    (0x20E1, 0x20E1), (0x2126, 0x2126), (0x212A, 0x212B), (0x212E, 0x212E), (0x2180, 0x2182),
+    (0x3005, 0x3005), (0x3007, 0x3007), (0x3021, 0x302F), (0x3031, 0x3035), (0x3041, 0x3094),
+    (0x3099, 0x309A), (0x309D, 0x309E), (0x30A1, 0x30FA), (0x30FC, 0x30FE), (0x3105, 0x312C),
+    (0x4E00, 0x9FA5), (0xAC00, 0xD7A3),
+)
+
+
+MAX_SIZE = 1048576
+MAX_DEPTH = 64
+MAX_ATTRS = 1024
+MAX_NS_SCOPE = 32
+SEP = "\x1f"
+XML_NS = "http://www.w3.org/XML/1998/namespace"
+RULES = ("size", "encoding", "decl", "doctype", "pi", "char", "name", "ns",
+         "dup-attr", "structure", "depth", "limits", "syntax")
+
+CHAR_BAD = re.compile("[^\t\n\r -퟿-�\U00010000-\U0010ffff]")
+DECL_START = re.compile(r"<\?xml(?=[ \t\r\n?])")
+DECL_STRICT = re.compile(
+    r"<\?xml[ \t\r\n]+version[ \t\r\n]*=[ \t\r\n]*(?:\"1\.0\"|'1\.0')"
+    r"(?:[ \t\r\n]+encoding[ \t\r\n]*=[ \t\r\n]*(?:\"([A-Za-z][A-Za-z0-9._-]*)\"|'([A-Za-z][A-Za-z0-9._-]*)'))?"
+    r"(?:[ \t\r\n]+standalone[ \t\r\n]*=[ \t\r\n]*(?:\"(?:yes|no)\"|'(?:yes|no)'))?"
+    r"[ \t\r\n]*\?>"
+)
+MARKUP_CHARS = set("<>&\"'=/ \t\r\n!?[]")
+
+
+class Refuse(Exception):
+    def __init__(self, rule):
+        Exception.__init__(self, rule)
+        self.rule = rule
+
+
+def in_table(table, code):
+    for low, high in table:
+        if low <= code <= high:
+            return True
+    return False
+
+
+def is_ncname(value):
+    if not value or not in_table(NAME_START, ord(value[0])) or value[0] == ":":
+        return False
+    for ch in value:
+        if ch == ":":
+            return False
+        code = ord(ch)
+        if not in_table(NAME_START, code) and not in_table(NAME_REST, code):
+            return False
+    return True
+
+
+def decode(raw):
+    if len(raw) > MAX_SIZE:
+        raise Refuse("size")
+    try:
+        if raw[:2] in (b"\xfe\xff", b"\xff\xfe"):
+            return raw.decode("utf-16"), "utf-16"
+        if raw[:2] in (b"<\x00", b"\x00<"):
+            raise Refuse("encoding")
+        if raw[:3] == b"\xef\xbb\xbf":
+            raw = raw[3:]
+        return raw.decode("utf-8"), "utf-8"
+    except UnicodeDecodeError:
+        raise Refuse("encoding")
+
+
+def check_decl(text, kind):
+    if not DECL_START.match(text):
+        return
+    match = DECL_STRICT.match(text)
+    if not match:
+        raise Refuse("decl")
+    declared = match.group(1) or match.group(2)
+    if declared is None:
+        return
+    declared = declared.upper()
+    if (kind == "utf-8" and declared == "UTF-8") or (kind == "utf-16" and declared == "UTF-16"):
+        return
+    raise Refuse("encoding")
+
+
+def tag_around(data, index):
+    start = data.rfind(b"<", 0, index + 1)
+    end = data.find(b">", index)
+    if start < 0:
+        return ""
+    return data[start:end if end >= 0 else len(data)].decode("utf-8", "ignore")
+
+
+def in_quotes(tag):
+    quote = ""
+    for ch in tag:
+        if quote:
+            if ch == quote:
+                quote = ""
+        elif ch in "\"'":
+            quote = ch
+    return quote != ""
+
+
+def classify_error(err, index, text, state):
+    code = err.code
+    errors = expat.errors
+    data = text.encode("utf-8")
+    here = data[:index].decode("utf-8", "ignore")
+    at = data[index:].decode("utf-8", "ignore")[:1]
+    if code == errors.codes[errors.XML_ERROR_BAD_CHAR_REF]:
+        return "char"
+    if code == errors.codes[errors.XML_ERROR_MISPLACED_XML_PI]:
+        return "decl"
+    if at and re.match(r"<\?xml[ \t\r\n?]", data[index:index + 6].decode("utf-8", "ignore")):
+        return "decl"
+    if code in (errors.codes[errors.XML_ERROR_UNBOUND_PREFIX],
+                errors.codes[errors.XML_ERROR_UNDECLARING_PREFIX],
+                errors.codes[errors.XML_ERROR_RESERVED_PREFIX_XML],
+                errors.codes[errors.XML_ERROR_RESERVED_PREFIX_XMLNS],
+                errors.codes[errors.XML_ERROR_RESERVED_NAMESPACE_URI]):
+        return "ns"
+    if code == errors.codes[errors.XML_ERROR_DUPLICATE_ATTRIBUTE]:
+        names = re.findall(r"[ \t\r\n](xmlns(?::[^ \t\r\n=]+)?)[ \t\r\n]*=", tag_around(data, index))
+        if len(names) != len(set(names)):
+            return "ns"
+        return "dup-attr"
+    if code in (errors.codes[errors.XML_ERROR_JUNK_AFTER_DOC_ELEMENT],
+                errors.codes[errors.XML_ERROR_NO_ELEMENTS]):
+        return "structure"
+    tag = here[max(here.rfind("<"), 0):]
+    open_tag = here.rfind("<") > here.rfind(">")
+    if state["depth"] == 0 and not open_tag and at and at != "<" and at not in " \t\r\n":
+        return "structure"
+    if code in (errors.codes[errors.XML_ERROR_INVALID_TOKEN], errors.codes[errors.XML_ERROR_SYNTAX]) \
+            and open_tag and not in_quotes(tag) and tag[1:2] not in ("!", "?"):
+        stripped = here.rstrip(" \t\r\n")
+        if here.endswith(":"):
+            return "name"
+        if at and at not in MARKUP_CHARS and not stripped.endswith("=") and stripped[-1:] not in "\"'":
+            return "name"
+    return "syntax"
+
+
+def parse_tree(raw):
+    text, kind = decode(raw)
+    if text.startswith("﻿"):
+        raise Refuse("structure")
+    bad = CHAR_BAD.search(text)
+    if bad:
+        raise Refuse("char")
+    check_decl(text, kind)
+    state = {"depth": 0, "ns_decls": 0}
+    pending = []
+    scopes = [{}]
+    stack = []
+    result = []
+
+    parser = expat.ParserCreate(encoding="utf-8", namespace_separator=SEP)
+    parser.namespace_prefixes = True
+
+    def split(raw_name):
+        parts = raw_name.split(SEP)
+        if len(parts) == 1:
+            return "", parts[0], ""
+        if len(parts) == 2:
+            return parts[0], parts[1], ""
+        return parts[0], parts[1], parts[2]
+
+    def flush():
+        if stack and stack[-1]["buffer"]:
+            stack[-1]["content"].append("".join(stack[-1]["buffer"]))
+            stack[-1]["buffer"] = []
+
+    def on_start(name, attrs):
+        if state["depth"] >= MAX_DEPTH:
+            raise Refuse("depth")
+        declared = state["ns_decls"]
+        state["ns_decls"] = 0
+        scope = dict(scopes[-1])
+        for decl_prefix, decl_uri in pending:
+            if decl_uri:
+                scope[decl_prefix or ""] = decl_uri
+            else:
+                scope.pop(decl_prefix or "", None)
+        del pending[:]
+        if len(scope) > MAX_NS_SCOPE:
+            raise Refuse("limits")
+        scopes.append(scope)
+        if len(attrs) + declared > MAX_ATTRS:
+            raise Refuse("limits")
+        ns, local, prefix = split(name)
+        if prefix == "xml":
+            raise Refuse("ns")
+        for part in (local, prefix):
+            if part and not is_ncname(part):
+                raise Refuse("name")
+        items = []
+        for key, value in attrs.items():
+            ans, alocal, aprefix = split(key)
+            if aprefix and alocal == "xmlns":
+                raise Refuse("ns")
+            for part in (alocal, aprefix):
+                if part and not is_ncname(part):
+                    raise Refuse("name")
+            items.append([ans, alocal, value])
+        items.sort(key=lambda item: (item[0], item[1]))
+        flush()
+        node = {"ns": ns, "name": local, "attrs": items, "content": [], "buffer": []}
+        if stack:
+            stack[-1]["content"].append(node)
+        else:
+            result.append(node)
+        stack.append(node)
+        state["depth"] += 1
+
+    def on_end(name):
+        flush()
+        stack.pop()
+        scopes.pop()
+        state["depth"] -= 1
+
+    def on_chars(data):
+        if stack:
+            stack[-1]["buffer"].append(data)
+
+    def on_ns(prefix, uri):
+        state["ns_decls"] += 1
+        pending.append((prefix, uri))
+        if prefix is not None and not is_ncname(prefix):
+            raise Refuse("name")
+
+    def on_pi(target, data):
+        raise Refuse("pi")
+
+    def on_doctype(*args):
+        raise Refuse("doctype")
+
+    parser.StartElementHandler = on_start
+    parser.EndElementHandler = on_end
+    parser.CharacterDataHandler = on_chars
+    parser.StartNamespaceDeclHandler = on_ns
+    parser.ProcessingInstructionHandler = on_pi
+    parser.StartDoctypeDeclHandler = on_doctype
+    try:
+        parser.Parse(text.encode("utf-8"), True)
+    except expat.ExpatError as err:
+        raise Refuse(classify_error(err, parser.ErrorByteIndex, text, state))
+    if len(result) != 1:
+        raise Refuse("structure")
+    return strip_buffers(result[0])
+
+
+def strip_buffers(node):
+    return {
+        "ns": node["ns"],
+        "name": node["name"],
+        "attrs": node["attrs"],
+        "content": [strip_buffers(item) if isinstance(item, dict) else item for item in node["content"]],
+    }
+
+
+def reference_read(raw):
+    try:
+        return {"ok": True, "tree": parse_tree(raw)}
+    except Refuse as refusal:
+        return {"ok": False, "rule": refusal.rule}
+    except RecursionError:
+        return {"ok": False, "rule": "depth"}
+
+
+def verdict(result):
+    return "accept" if result["ok"] else "refuse:" + result["rule"]
+
+
+def load_body(case):
+    if case.get("body_b64") is not None:
+        return base64.b64decode(case["body_b64"])
+    with open(os.path.join(ROOT, case["body_file"]), "rb") as handle:
+        return handle.read()
+
+
+def main():
+    with open(CASES_FILE, encoding="utf-8") as handle:
+        cases = json.load(handle)
+    names = set()
+    outputs = []
+    failures = 0
+    for case in cases:
+        name = case["case"]
+        if name in names:
+            print("duplicate case name: " + name)
+            return 1
+        names.add(name)
+        expect = case["expect"]
+        if expect != "accept" and not (expect.startswith("refuse:") and expect[7:] in RULES):
+            print("bad expectation for %s: %r" % (name, expect))
+            return 1
+        if (case.get("body_b64") is None) == (case.get("body_file") is None):
+            print("case needs exactly one of body_b64 and body_file: " + name)
+            return 1
+        raw = load_body(case)
+        result = reference_read(raw)
+        if verdict(result) != expect:
+            print("MISMATCH %s (%s): expected %s, reference %s" % (name, case["source"], expect, verdict(result)))
+            failures += 1
+        outputs.append((name, raw, result))
+    if failures:
+        print("%d cases disagree; nothing written" % failures)
+        return 1
+    os.makedirs(OUT_DIR, exist_ok=True)
+    for stale in os.listdir(OUT_DIR):
+        if stale not in names and os.path.isdir(os.path.join(OUT_DIR, stale)):
+            shutil.rmtree(os.path.join(OUT_DIR, stale))
+    for name, raw, result in outputs:
+        folder = os.path.join(OUT_DIR, name)
+        os.makedirs(folder, exist_ok=True)
+        with open(os.path.join(folder, "body.xml"), "wb") as handle:
+            handle.write(raw)
+        with open(os.path.join(folder, "expected.json"), "w", encoding="utf-8") as handle:
+            handle.write(json.dumps(result, ensure_ascii=False, indent=1, sort_keys=False) + "\n")
+    accepted = sum(1 for _, _, result in outputs if result["ok"])
+    print("wrote %d cases (%d accept, %d refuse)" % (len(outputs), accepted, len(outputs) - accepted))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

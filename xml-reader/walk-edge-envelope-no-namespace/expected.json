@@ -1,0 +1,76 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "",
+  "name": "Envelope",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "",
+    "name": "Body",
+    "attrs": [],
+    "content": [
+     {
+      "ns": "urn:amantrue:demo:patient",
+      "name": "GetPatientResponse",
+      "attrs": [],
+      "content": [
+       {
+        "ns": "urn:amantrue:demo:patient",
+        "name": "Patient",
+        "attrs": [
+         [
+          "",
+          "id",
+          "p1"
+         ]
+        ],
+        "content": [
+         {
+          "ns": "urn:amantrue:demo:patient",
+          "name": "Name",
+          "attrs": [],
+          "content": [
+           {
+            "ns": "urn:amantrue:demo:patient",
+            "name": "Given",
+            "attrs": [],
+            "content": [
+             "Eboni"
+            ]
+           },
+           {
+            "ns": "urn:amantrue:demo:patient",
+            "name": "Given",
+            "attrs": [],
+            "content": [
+             " Ebony "
+            ]
+           }
+          ]
+         },
+         {
+          "ns": "urn:amantrue:demo:patient",
+          "name": "Gender",
+          "attrs": [],
+          "content": [
+           "female"
+          ]
+         },
+         {
+          "ns": "urn:amantrue:demo:patient",
+          "name": "BirthDate",
+          "attrs": [],
+          "content": [
+           " 1995-07-10 "
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

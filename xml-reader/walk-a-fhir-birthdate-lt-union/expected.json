@@ -1,0 +1,22 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "http://hl7.org/fhir",
+  "name": "Patient",
+  "attrs": [],
+  "content": [
+   {
+    "ns": "http://hl7.org/fhir",
+    "name": "birthDate",
+    "attrs": [
+     [
+      "",
+      "value",
+      "1995-07-10"
+     ]
+    ],
+    "content": []
+   }
+  ]
+ }
+}

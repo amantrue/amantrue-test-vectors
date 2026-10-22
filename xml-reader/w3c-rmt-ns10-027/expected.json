@@ -1,0 +1,15 @@
+{
+ "ok": true,
+ "tree": {
+  "ns": "",
+  "name": "foo",
+  "attrs": [
+   [
+    "http://www.w3.org/XML/1998/namespace",
+    "lang",
+    "en"
+   ]
+  ],
+  "content": []
+ }
+}
